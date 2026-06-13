@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Услуги — НЭКСОРА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="neksora.css">
+</head>
+<body>
+<div class="nx-root" style="background:#000;color:#fff;font-family:'Inter',system-ui,sans-serif;min-height:100vh;overflow-x:hidden;position:relative">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(178,182,189,.12)">
+  <div style="max-width:1240px;margin:0 auto;height:68px;padding:0 32px;display:flex;align-items:center;gap:32px">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0">
+      <span style="width:38px;height:38px;border-radius:9px;background:#2b7fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(43,127,255,.4)">
+        <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span style="font-size:19px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+    </a>
+    <nav style="display:flex;gap:30px;margin-left:18px">
+      <a class="nx-link" href="index.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav0">Главная</a>
+      <a class="nx-link" href="uslugi.html" style="font-size:14.5px;font-weight:600;color:#fff;text-decoration:none" data-k="nav1">Услуги</a>
+      <a class="nx-link" href="kompaniya.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav2">О компании</a>
+      <a class="nx-link" href="kontakty.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav3">Контакты</a>
+    </nav>
+    <div class="nx-headactions" style="margin-left:auto;display:flex;align-items:center;gap:14px">
+      <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+        <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+        <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+      </div>
+      <a class="nx-cta" href="kontakty.html" style="background:#2b7fff;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none" data-k="cta1">Заказать консультацию</a>
+    </div>
+    <button id="nx-burger" class="nx-burger" aria-label="Menu" style="margin-left:auto;align-items:center;justify-content:center;width:42px;height:42px;border-radius:9px;background:#15181e;border:1px solid rgba(178,182,189,.15);cursor:pointer;color:#fff">
+      <svg id="nx-burger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg id="nx-burger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="nx-mobile-menu" class="nx-mobile-menu" style="display:none;border-top:1px solid rgba(178,182,189,.12);background:rgba(0,0,0,.96);backdrop-filter:blur(14px);padding:14px 20px 22px">
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <a data-close-menu href="index.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav0">Главная</a>
+      <a data-close-menu href="uslugi.html" style="font-size:16px;font-weight:600;color:#fff;text-decoration:none;padding:12px 6px" data-k="nav1">Услуги</a>
+      <a data-close-menu href="kompaniya.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav2">О компании</a>
+      <a data-close-menu href="kontakty.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav3">Контакты</a>
+    </div>
+    <div style="height:1px;background:rgba(178,182,189,.12);margin:14px 0"></div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+        <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+        <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+      </div>
+      <a class="nx-cta" data-close-menu href="kontakty.html" style="flex:1;text-align:center;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:13px 18px;border-radius:8px;text-decoration:none" data-k="cta1">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section style="position:relative;max-width:1240px;margin:0 auto;padding:64px 32px 56px;overflow:hidden">
+  <div style="position:absolute;top:-60px;left:30%;width:520px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.22),transparent 64%);filter:blur(20px);animation:nx-glow 8s ease-in-out infinite;pointer-events:none"></div>
+  <div style="position:relative;z-index:2;max-width:760px">
+    <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#656a76;margin-bottom:22px">
+      <a href="index.html" class="nx-link" style="color:#656a76;text-decoration:none" data-k="nav0">Главная</a>
+      <span style="opacity:.5">/</span>
+      <span style="color:#9cc4ff" data-k="nav1">Услуги</span>
+    </div>
+    <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:16px" data-k="headEyebrow">Услуги</div>
+    <h1 style="font-size:54px;line-height:1.06;letter-spacing:-1.8px;font-weight:700;margin:0 0 20px;color:#fff;text-wrap:balance" data-k="headTitle">Полный цикл автоматизации и безопасности</h1>
+    <p style="font-size:19px;line-height:1.6;color:#b2b6bd;margin:0;max-width:620px" data-k="headSub">От инженерного проекта до запуска и сервисного сопровождения. Проектируем системы, которыми удобно управлять и легко масштабировать.</p>
+  </div>
+</section>
+
+<!-- SERVICE ROWS -->
+<section style="max-width:1240px;margin:0 auto;padding:0 32px 40px;display:flex;flex-direction:column;gap:28px">
+
+  <!-- Row 0: Smart Home (image left) -->
+  <div class="nx-card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:18px;overflow:hidden">
+    <div style="position:relative;min-height:340px;background:linear-gradient(150deg,#11233f,#0a0e16)">
+      <img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1000&q=80" loading="lazy" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">
+      <div style="position:absolute;inset:0;background:linear-gradient(115deg,rgba(43,127,255,.16),rgba(5,8,16,.35) 60%,#15181e)"></div>
+    </div>
+    <div style="padding:40px 40px 42px;display:flex;flex-direction:column;justify-content:center">
+      <span style="align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.1em;color:#9cc4ff;text-transform:uppercase;background:rgba(43,127,255,.1);border:1px solid rgba(43,127,255,.28);padding:5px 11px;border-radius:9999px;margin-bottom:16px" data-k="s0tag">Резиденции и квартиры</span>
+      <h2 style="font-size:30px;font-weight:700;letter-spacing:-.6px;margin:0 0 12px;color:#fff" data-k="s0title">Умный дом</h2>
+      <p style="font-size:15.5px;line-height:1.62;color:#b2b6bd;margin:0 0 22px" data-k="s0desc">Единое управление светом, климатом, шторами и медиа. Сценарии, которые подстраиваются под ваш день и экономят ресурсы.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px">
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt0">Освещение и сценарии</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt1">Климат и микроклимат</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt2">Шторы и приводы</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt3">Мультирум и медиа</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt4">Управление со смартфона</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s0pt5">Энергоэффективность</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 1: Business Automation (image right) -->
+  <div class="nx-card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:18px;overflow:hidden">
+    <div style="padding:40px 40px 42px;display:flex;flex-direction:column;justify-content:center">
+      <span style="align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.1em;color:#9cc4ff;text-transform:uppercase;background:rgba(43,127,255,.1);border:1px solid rgba(43,127,255,.28);padding:5px 11px;border-radius:9999px;margin-bottom:16px" data-k="s1tag">Офисы · ритейл · отели</span>
+      <h2 style="font-size:30px;font-weight:700;letter-spacing:-.6px;margin:0 0 12px;color:#fff" data-k="s1title">Автоматизация бизнеса</h2>
+      <p style="font-size:15.5px;line-height:1.62;color:#b2b6bd;margin:0 0 22px" data-k="s1desc">Инженерия зданий и коммерческих помещений: диспетчеризация, учёт ресурсов и комфорт без простоев.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px">
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt0">Диспетчеризация (BMS)</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt1">Учёт энергоресурсов</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt2">Освещение и HVAC</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt3">Сценарии переговорных</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt4">Интеграция с ИТ</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s1pt5">Удалённый контроль</span></div>
+      </div>
+    </div>
+    <div style="position:relative;min-height:340px;background:linear-gradient(150deg,#11233f,#0a0e16)">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" loading="lazy" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">
+      <div style="position:absolute;inset:0;background:linear-gradient(245deg,rgba(43,127,255,.16),rgba(5,8,16,.35) 60%,#15181e)"></div>
+    </div>
+  </div>
+
+  <!-- Row 2: Industrial (image left) -->
+  <div class="nx-card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:18px;overflow:hidden">
+    <div style="position:relative;min-height:340px;background:linear-gradient(150deg,#11233f,#0a0e16)">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1000&q=80" loading="lazy" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">
+      <div style="position:absolute;inset:0;background:linear-gradient(115deg,rgba(43,127,255,.16),rgba(5,8,16,.35) 60%,#15181e)"></div>
+    </div>
+    <div style="padding:40px 40px 42px;display:flex;flex-direction:column;justify-content:center">
+      <span style="align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.1em;color:#9cc4ff;text-transform:uppercase;background:rgba(43,127,255,.1);border:1px solid rgba(43,127,255,.28);padding:5px 11px;border-radius:9999px;margin-bottom:16px" data-k="s2tag">Производство и объекты</span>
+      <h2 style="font-size:30px;font-weight:700;letter-spacing:-.6px;margin:0 0 12px;color:#fff" data-k="s2title">Промышленная автоматизация</h2>
+      <p style="font-size:15.5px;line-height:1.62;color:#b2b6bd;margin:0 0 22px" data-k="s2desc">АСУ ТП, щиты управления и SCADA для производств. Надёжность, резервирование и предсказуемая эксплуатация.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px">
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt0">АСУ ТП и SCADA</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt1">Щиты управления (НКУ)</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt2">Промышленный IoT</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt3">Диспетчеризация</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt4">Резервирование</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s2pt5">Учёт и телеметрия</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 3: Security (image right) -->
+  <div class="nx-card" style="display:grid;grid-template-columns:1fr 1fr;gap:0;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:18px;overflow:hidden">
+    <div style="padding:40px 40px 42px;display:flex;flex-direction:column;justify-content:center">
+      <span style="align-self:flex-start;font-size:11px;font-weight:600;letter-spacing:.1em;color:#9cc4ff;text-transform:uppercase;background:rgba(43,127,255,.1);border:1px solid rgba(43,127,255,.28);padding:5px 11px;border-radius:9999px;margin-bottom:16px" data-k="s3tag">Видео · Пожарные · СКУД</span>
+      <h2 style="font-size:30px;font-weight:700;letter-spacing:-.6px;margin:0 0 12px;color:#fff" data-k="s3title">Системы безопасности</h2>
+      <p style="font-size:15.5px;line-height:1.62;color:#b2b6bd;margin:0 0 22px" data-k="s3desc">Комплексная безопасность по нормам с интеграцией в общую инженерную инфраструктуру объекта.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px 18px">
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt0">IP-видеонаблюдение</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt1">Видеоаналитика</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt2">Пожарная сигнализация</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt3">СКУД и домофония</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt4">Охранная сигнализация</span></div>
+        <div style="display:flex;align-items:center;gap:9px"><svg width="15" height="15" viewBox="0 0 16 16" fill="none" style="flex-shrink:0"><path d="M3.5 8.5l3 3 6-7" stroke="#2b7fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><span style="font-size:13.5px;color:#d2d5da" data-k="s3pt5">Мониторинг 24/7</span></div>
+      </div>
+    </div>
+    <div style="position:relative;min-height:340px;background:linear-gradient(150deg,#11233f,#0a0e16)">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80" loading="lazy" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">
+      <div style="position:absolute;inset:0;background:linear-gradient(245deg,rgba(43,127,255,.16),rgba(5,8,16,.35) 60%,#15181e)"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section style="border-top:1px solid rgba(178,182,189,.1);background:linear-gradient(180deg,#05070c,#000);margin-top:48px">
+  <div style="max-width:1240px;margin:0 auto;padding:88px 32px">
+    <div style="margin-bottom:44px;max-width:620px">
+      <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:14px" data-k="procEyebrow">Как мы работаем</div>
+      <h2 style="font-size:38px;line-height:1.12;letter-spacing:-1px;font-weight:700;margin:0;color:#fff" data-k="procTitle">Прозрачный процесс — от аудита до сервиса</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:16px">
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:24px 20px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.06em;margin-bottom:16px">01</div>
+        <h3 style="font-size:17px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="st0title">Аудит</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#9aa0ab;margin:0" data-k="st0desc">Выезд, замеры, анализ задач и бюджета.</p>
+      </div>
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:24px 20px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.06em;margin-bottom:16px">02</div>
+        <h3 style="font-size:17px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="st1title">Проект</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#9aa0ab;margin:0" data-k="st1desc">Рабочая документация, спецификация, согласование.</p>
+      </div>
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:24px 20px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.06em;margin-bottom:16px">03</div>
+        <h3 style="font-size:17px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="st2title">Монтаж</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#9aa0ab;margin:0" data-k="st2desc">Прокладка, установка оборудования и щитов.</p>
+      </div>
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:24px 20px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.06em;margin-bottom:16px">04</div>
+        <h3 style="font-size:17px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="st3title">Пусконаладка</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#9aa0ab;margin:0" data-k="st3desc">Программирование, тесты, сдача по нормам.</p>
+      </div>
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:24px 20px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.06em;margin-bottom:16px">05</div>
+        <h3 style="font-size:17px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="st4title">Сервис</h3>
+        <p style="font-size:13.5px;line-height:1.55;color:#9aa0ab;margin:0" data-k="st4desc">Гарантия, мониторинг и поддержка 24/7.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="max-width:1240px;margin:0 auto;padding:72px 32px 84px">
+  <div style="position:relative;overflow:hidden;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:24px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <div style="position:absolute;top:-80px;right:-40px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.26),transparent 62%);filter:blur(16px);pointer-events:none"></div>
+    <div style="position:relative;z-index:2;max-width:560px">
+      <h2 style="font-size:34px;line-height:1.12;letter-spacing:-.8px;font-weight:700;margin:0 0 12px;color:#fff" data-k="ctaTitle">Готовы обсудить ваш проект?</h2>
+      <p style="font-size:16.5px;line-height:1.6;color:#b2b6bd;margin:0" data-k="ctaSub">Бесплатная консультация и предварительный расчёт в течение рабочего дня.</p>
+    </div>
+    <a class="nx-cta" href="kontakty.html" style="position:relative;z-index:2;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:8px;text-decoration:none;white-space:nowrap" data-k="cta1">Заказать консультацию</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid rgba(178,182,189,.1);background:#000">
+  <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px">
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(178,182,189,.1)">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px">
+          <span style="width:34px;height:34px;border-radius:8px;background:#2b7fff;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span style="font-size:17px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+        </div>
+        <p style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0 0 16px;max-width:300px" data-k="footTagline">Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.</p>
+        <a href="https://neksora.pro" style="font-size:14px;color:#2b7fff;text-decoration:none;font-weight:600">neksora.pro</a>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc0title">Услуги</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0a">Умный дом</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0b">Автоматизация бизнеса</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0c">Промышленная автоматизация</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0d">Безопасность</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc1title">Компания</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="kompaniya.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1a">О нас</a>
+          <a class="nx-link" href="kompaniya.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1b">Проекты</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1c">Партнёры</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1d">Контакты</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc2title">Заказчикам</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2a">Частным лицам</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2b">Бизнесу</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2c">Госсектору</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2d">Сервис</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#656a76" data-k="footCopy">© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.</span>
+      <span style="font-size:13px;color:#656a76" data-k="footLegal">Политика конфиденциальности · neksora.pro</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="neksora.js"></script>
+<script>
+window.NX_COPY = {
+  ru: {
+    pageTitle:'Услуги — НЭКСОРА',
+    nav0:'Главная',nav1:'Услуги',nav2:'О компании',nav3:'Контакты',
+    cta1:'Заказать консультацию',
+    headEyebrow:'Услуги',
+    headTitle:'Полный цикл автоматизации и безопасности',
+    headSub:'От инженерного проекта до запуска и сервисного сопровождения. Проектируем системы, которыми удобно управлять и легко масштабировать.',
+    s0tag:'Резиденции и квартиры',s0title:'Умный дом',
+    s0desc:'Единое управление светом, климатом, шторами и медиа. Сценарии, которые подстраиваются под ваш день и экономят ресурсы.',
+    s0pt0:'Освещение и сценарии',s0pt1:'Климат и микроклимат',s0pt2:'Шторы и приводы',
+    s0pt3:'Мультирум и медиа',s0pt4:'Управление со смартфона',s0pt5:'Энергоэффективность',
+    s1tag:'Офисы · ритейл · отели',s1title:'Автоматизация бизнеса',
+    s1desc:'Инженерия зданий и коммерческих помещений: диспетчеризация, учёт ресурсов и комфорт без простоев.',
+    s1pt0:'Диспетчеризация (BMS)',s1pt1:'Учёт энергоресурсов',s1pt2:'Освещение и HVAC',
+    s1pt3:'Сценарии переговорных',s1pt4:'Интеграция с ИТ',s1pt5:'Удалённый контроль',
+    s2tag:'Производство и объекты',s2title:'Промышленная автоматизация',
+    s2desc:'АСУ ТП, щиты управления и SCADA для производств. Надёжность, резервирование и предсказуемая эксплуатация.',
+    s2pt0:'АСУ ТП и SCADA',s2pt1:'Щиты управления (НКУ)',s2pt2:'Промышленный IoT',
+    s2pt3:'Диспетчеризация',s2pt4:'Резервирование',s2pt5:'Учёт и телеметрия',
+    s3tag:'Видео · Пожарные · СКУД',s3title:'Системы безопасности',
+    s3desc:'Комплексная безопасность по нормам с интеграцией в общую инженерную инфраструктуру объекта.',
+    s3pt0:'IP-видеонаблюдение',s3pt1:'Видеоаналитика',s3pt2:'Пожарная сигнализация',
+    s3pt3:'СКУД и домофония',s3pt4:'Охранная сигнализация',s3pt5:'Мониторинг 24/7',
+    procEyebrow:'Как мы работаем',procTitle:'Прозрачный процесс — от аудита до сервиса',
+    st0title:'Аудит',st0desc:'Выезд, замеры, анализ задач и бюджета.',
+    st1title:'Проект',st1desc:'Рабочая документация, спецификация, согласование.',
+    st2title:'Монтаж',st2desc:'Прокладка, установка оборудования и щитов.',
+    st3title:'Пусконаладка',st3desc:'Программирование, тесты, сдача по нормам.',
+    st4title:'Сервис',st4desc:'Гарантия, мониторинг и поддержка 24/7.',
+    ctaTitle:'Готовы обсудить ваш проект?',ctaSub:'Бесплатная консультация и предварительный расчёт в течение рабочего дня.',
+    footTagline:'Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.',
+    fc0title:'Услуги',fc0a:'Умный дом',fc0b:'Автоматизация бизнеса',fc0c:'Промышленная автоматизация',fc0d:'Безопасность',
+    fc1title:'Компания',fc1a:'О нас',fc1b:'Проекты',fc1c:'Партнёры',fc1d:'Контакты',
+    fc2title:'Заказчикам',fc2a:'Частным лицам',fc2b:'Бизнесу',fc2c:'Госсектору',fc2d:'Сервис',
+    footCopy:'© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.',
+    footLegal:'Политика конфиденциальности · neksora.pro',
+  },
+  en: {
+    pageTitle:'Services — NEKSORA',
+    nav0:'Home',nav1:'Services',nav2:'About',nav3:'Contact',
+    cta1:'Request a consultation',
+    headEyebrow:'Services',
+    headTitle:'A full cycle of automation and security',
+    headSub:'From engineering design to commissioning and service. We build systems that are easy to operate and simple to scale.',
+    s0tag:'Homes & apartments',s0title:'Smart home',
+    s0desc:'Unified control of lighting, climate, shades and media. Scenes that adapt to your day and save resources.',
+    s0pt0:'Lighting & scenes',s0pt1:'Climate control',s0pt2:'Shades & drives',
+    s0pt3:'Multiroom & media',s0pt4:'Smartphone control',s0pt5:'Energy efficiency',
+    s1tag:'Offices · retail · hotels',s1title:'Business automation',
+    s1desc:'Engineering for buildings and commercial spaces: dispatching, metering and comfort without downtime.',
+    s1pt0:'BMS dispatching',s1pt1:'Energy metering',s1pt2:'Lighting & HVAC',
+    s1pt3:'Meeting-room scenes',s1pt4:'IT integration',s1pt5:'Remote monitoring',
+    s2tag:'Production & facilities',s2title:'Industrial automation',
+    s2desc:'ICS, control cabinets and SCADA for production. Reliability, redundancy and predictable operation.',
+    s2pt0:'ICS & SCADA',s2pt1:'Control cabinets',s2pt2:'Industrial IoT',
+    s2pt3:'Dispatching',s2pt4:'Redundancy',s2pt5:'Metering & telemetry',
+    s3tag:'Video · Fire · Access',s3title:'Security systems',
+    s3desc:'Comprehensive, code-compliant security integrated into the facility\'s overall engineering infrastructure.',
+    s3pt0:'IP surveillance',s3pt1:'Video analytics',s3pt2:'Fire alarm',
+    s3pt3:'Access & intercom',s3pt4:'Intrusion alarm',s3pt5:'24/7 monitoring',
+    procEyebrow:'How we work',procTitle:'A transparent process — from audit to service',
+    st0title:'Audit',st0desc:'Site visit, measurements, task and budget analysis.',
+    st1title:'Design',st1desc:'Working documentation, specification, approval.',
+    st2title:'Install',st2desc:'Cabling, equipment and cabinet installation.',
+    st3title:'Commission',st3desc:'Programming, testing, handover to code.',
+    st4title:'Service',st4desc:'Warranty, monitoring and 24/7 support.',
+    ctaTitle:'Ready to discuss your project?',ctaSub:'A free consultation and preliminary estimate within one business day.',
+    footTagline:'Design and delivery of automation and security systems for home, business and industry.',
+    fc0title:'Services',fc0a:'Smart home',fc0b:'Business automation',fc0c:'Industrial automation',fc0d:'Security',
+    fc1title:'Company',fc1a:'About',fc1b:'Projects',fc1c:'Partners',fc1d:'Contact',
+    fc2title:'Clients',fc2a:'Private',fc2b:'Business',fc2c:'Government',fc2d:'Service',
+    footCopy:'© 2026 KSP-Avtomatika LLC · NEKSORA. All rights reserved.',
+    footLegal:'Privacy policy · neksora.pro',
+  }
+};
+</script>
+</body>
+</html>

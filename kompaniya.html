@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>О компании — НЭКСОРА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="neksora.css">
+<style>
+  .nx-chip{transition:border-color .14s ease,color .14s ease}
+  .nx-chip:hover{border-color:rgba(43,127,255,.4) !important;color:#fff !important}
+</style>
+</head>
+<body>
+<div class="nx-root" style="background:#000;color:#fff;font-family:'Inter',system-ui,sans-serif;min-height:100vh;overflow-x:hidden;position:relative">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(178,182,189,.12)">
+  <div style="max-width:1240px;margin:0 auto;height:68px;padding:0 32px;display:flex;align-items:center;gap:32px">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0">
+      <span style="width:38px;height:38px;border-radius:9px;background:#2b7fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(43,127,255,.4)">
+        <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span style="font-size:19px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+    </a>
+    <nav style="display:flex;gap:30px;margin-left:18px">
+      <a class="nx-link" href="index.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav0">Главная</a>
+      <a class="nx-link" href="uslugi.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav1">Услуги</a>
+      <a class="nx-link" href="kompaniya.html" style="font-size:14.5px;font-weight:600;color:#fff;text-decoration:none" data-k="nav2">О компании</a>
+      <a class="nx-link" href="kontakty.html" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none" data-k="nav3">Контакты</a>
+    </nav>
+    <div class="nx-headactions" style="margin-left:auto;display:flex;align-items:center;gap:14px">
+      <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+        <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+        <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+      </div>
+      <a class="nx-cta" href="kontakty.html" style="background:#2b7fff;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none" data-k="cta1">Заказать консультацию</a>
+    </div>
+    <button id="nx-burger" class="nx-burger" aria-label="Menu" style="margin-left:auto;align-items:center;justify-content:center;width:42px;height:42px;border-radius:9px;background:#15181e;border:1px solid rgba(178,182,189,.15);cursor:pointer;color:#fff">
+      <svg id="nx-burger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg id="nx-burger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="nx-mobile-menu" class="nx-mobile-menu" style="display:none;border-top:1px solid rgba(178,182,189,.12);background:rgba(0,0,0,.96);backdrop-filter:blur(14px);padding:14px 20px 22px">
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <a data-close-menu href="index.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav0">Главная</a>
+      <a data-close-menu href="uslugi.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav1">Услуги</a>
+      <a data-close-menu href="kompaniya.html" style="font-size:16px;font-weight:600;color:#fff;text-decoration:none;padding:12px 6px" data-k="nav2">О компании</a>
+      <a data-close-menu href="kontakty.html" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px" data-k="nav3">Контакты</a>
+    </div>
+    <div style="height:1px;background:rgba(178,182,189,.12);margin:14px 0"></div>
+    <div style="display:flex;align-items:center;gap:12px">
+      <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+        <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+        <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+      </div>
+      <a class="nx-cta" data-close-menu href="kontakty.html" style="flex:1;text-align:center;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:13px 18px;border-radius:8px;text-decoration:none" data-k="cta1">Заказать консультацию</a>
+    </div>
+  </div>
+</header>
+
+<!-- PAGE HEADER -->
+<section style="position:relative;max-width:1240px;margin:0 auto;padding:64px 32px 64px;overflow:hidden">
+  <div style="position:absolute;top:-60px;right:8%;width:520px;height:460px;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.22),transparent 64%);filter:blur(20px);animation:nx-glow 8s ease-in-out infinite;pointer-events:none"></div>
+  <div style="position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center">
+    <div>
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#656a76;margin-bottom:22px">
+        <a href="index.html" class="nx-link" style="color:#656a76;text-decoration:none" data-k="nav0">Главная</a>
+        <span style="opacity:.5">/</span>
+        <span style="color:#9cc4ff" data-k="nav2">О компании</span>
+      </div>
+      <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:16px" data-k="headEyebrow">О компании</div>
+      <h1 style="font-size:50px;line-height:1.07;letter-spacing:-1.6px;font-weight:700;margin:0 0 20px;color:#fff;text-wrap:balance" data-k="headTitle">Инженеры автоматизации и безопасности</h1>
+      <p style="font-size:18px;line-height:1.62;color:#b2b6bd;margin:0;max-width:540px" data-k="headSub">НЭКСОРА проектирует и реализует системы автоматизации и безопасности для частных, коммерческих и государственных заказчиков. Мы берём объект под ключ — и отвечаем за результат на всём жизненном цикле.</p>
+    </div>
+    <div style="position:relative;border-radius:18px;overflow:hidden;border:1px solid rgba(178,182,189,.15);aspect-ratio:5/4;background:linear-gradient(150deg,#11233f,#0a0e16)">
+      <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" loading="lazy" onerror="this.style.display='none'" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover" alt="">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,127,255,.16),rgba(5,8,16,.5))"></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section style="max-width:1240px;margin:0 auto;padding:0 32px 8px">
+  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px">
+    <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:26px 24px">
+      <div style="font-size:34px;font-weight:700;color:#fff;letter-spacing:-1px" data-k="stat0v">2024</div>
+      <div style="font-size:14px;color:#9aa0ab;margin-top:5px" data-k="stat0l">год основания</div>
+    </div>
+    <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:26px 24px">
+      <div style="font-size:34px;font-weight:700;color:#fff;letter-spacing:-1px" data-k="stat1v">R&amp;D</div>
+      <div style="font-size:14px;color:#9aa0ab;margin-top:5px" data-k="stat1l">наука и инжиниринг</div>
+    </div>
+    <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:26px 24px">
+      <div style="font-size:34px;font-weight:700;color:#fff;letter-spacing:-1px" data-k="stat2v">24/7</div>
+      <div style="font-size:14px;color:#9aa0ab;margin-top:5px" data-k="stat2l">мониторинг и поддержка</div>
+    </div>
+    <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:26px 24px">
+      <div style="font-size:34px;font-weight:700;color:#fff;letter-spacing:-1px" data-k="stat3v">ГОСТ</div>
+      <div style="font-size:14px;color:#9aa0ab;margin-top:5px" data-k="stat3l">проектирование по нормам</div>
+    </div>
+  </div>
+</section>
+
+<!-- PRINCIPLES -->
+<section style="max-width:1240px;margin:0 auto;padding:80px 32px 40px">
+  <div style="margin-bottom:44px;max-width:640px">
+    <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:14px" data-k="princEyebrow">Принципы</div>
+    <h2 style="font-size:38px;line-height:1.12;letter-spacing:-1px;font-weight:700;margin:0;color:#fff" data-k="princTitle">Как мы подходим к каждому проекту</h2>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px">
+    <div class="nx-card" style="display:flex;gap:20px;align-items:flex-start;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px">
+      <div style="flex-shrink:0;width:50px;height:50px;border-radius:12px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center">
+        <span style="font-size:17px;font-weight:700;color:#7fb2ff">01</span>
+      </div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="pr0title">Инженерный подход</h3>
+        <p style="font-size:15px;line-height:1.6;color:#b2b6bd;margin:0" data-k="pr0desc">Считаем нагрузки, резервируем, документируем. Решения, которые работают годами, а не до первого сбоя.</p>
+      </div>
+    </div>
+    <div class="nx-card" style="display:flex;gap:20px;align-items:flex-start;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px">
+      <div style="flex-shrink:0;width:50px;height:50px;border-radius:12px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center">
+        <span style="font-size:17px;font-weight:700;color:#7fb2ff">02</span>
+      </div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="pr1title">Единая ответственность</h3>
+        <p style="font-size:15px;line-height:1.6;color:#b2b6bd;margin:0" data-k="pr1desc">Проект, монтаж и сервис — один подрядчик. Никаких разрывов в зоне ответственности между этапами.</p>
+      </div>
+    </div>
+    <div class="nx-card" style="display:flex;gap:20px;align-items:flex-start;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px">
+      <div style="flex-shrink:0;width:50px;height:50px;border-radius:12px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center">
+        <span style="font-size:17px;font-weight:700;color:#7fb2ff">03</span>
+      </div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="pr2title">Стандарты и нормы</h3>
+        <p style="font-size:15px;line-height:1.6;color:#b2b6bd;margin:0" data-k="pr2desc">Соответствие ГОСТ, СП и отраслевым требованиям. Полный пакет исполнительной документации.</p>
+      </div>
+    </div>
+    <div class="nx-card" style="display:flex;gap:20px;align-items:flex-start;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px">
+      <div style="flex-shrink:0;width:50px;height:50px;border-radius:12px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center">
+        <span style="font-size:17px;font-weight:700;color:#7fb2ff">04</span>
+      </div>
+      <div>
+        <h3 style="font-size:20px;font-weight:600;letter-spacing:-.3px;margin:0 0 9px;color:#fff" data-k="pr3title">Сервис на годы</h3>
+        <p style="font-size:15px;line-height:1.6;color:#b2b6bd;margin:0" data-k="pr3desc">Гарантия, мониторинг и быстрая реакция. Сопровождаем системы на всём жизненном цикле объекта.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AUDIENCE -->
+<section style="border-top:1px solid rgba(178,182,189,.1);background:linear-gradient(180deg,#05070c,#000)">
+  <div style="max-width:1240px;margin:0 auto;padding:80px 32px">
+    <div style="margin-bottom:40px;max-width:640px">
+      <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:14px" data-k="audEyebrow">Для кого</div>
+      <h2 style="font-size:36px;line-height:1.12;letter-spacing:-1px;font-weight:700;margin:0;color:#fff" data-k="audTitle">Работаем с частными, коммерческими и государственными заказчиками</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+      <div class="nx-card" style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px 28px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.04em;margin-bottom:16px">01</div>
+        <h3 style="font-size:21px;font-weight:700;letter-spacing:-.4px;margin:0 0 11px;color:#fff" data-k="aud0title">Частным заказчикам</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0" data-k="aud0desc">Дома, квартиры и резиденции под ключ — от проекта до сервисного сопровождения.</p>
+      </div>
+      <div class="nx-card" style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px 28px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.04em;margin-bottom:16px">02</div>
+        <h3 style="font-size:21px;font-weight:700;letter-spacing:-.4px;margin:0 0 11px;color:#fff" data-k="aud1title">Бизнесу</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0" data-k="aud1desc">Офисы, ритейл, отели и склады: снижаем издержки, простои и операционные риски.</p>
+      </div>
+      <div class="nx-card" style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:16px;padding:30px 28px">
+        <div style="font-size:13px;font-weight:700;color:#2b7fff;letter-spacing:.04em;margin-bottom:16px">03</div>
+        <h3 style="font-size:21px;font-weight:700;letter-spacing:-.4px;margin:0 0 11px;color:#fff" data-k="aud2title">Госсектору</h3>
+        <p style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0" data-k="aud2desc">Объекты по 44-ФЗ и 223-ФЗ — соответствие нормам и полная документация.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS / TECHNOLOGY -->
+<section style="max-width:1240px;margin:0 auto;padding:80px 32px 40px">
+  <div style="text-align:center;margin-bottom:36px">
+    <div style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:14px" data-k="partEyebrow">Технологии</div>
+    <h2 style="font-size:30px;line-height:1.15;letter-spacing:-.8px;font-weight:700;margin:0 auto;color:#fff;max-width:560px" data-k="partTitle">Работаем на проверенном оборудовании ведущих вендоров</h2>
+  </div>
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:880px;margin:0 auto">
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">KNX</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Schneider Electric</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Siemens</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">ABB</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Legrand</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Hikvision</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Dahua</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Bosch</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Ajax</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Wirenboard</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">Modbus</span>
+    <span class="nx-chip" style="font-size:15px;font-weight:600;color:#b2b6bd;background:#15181e;border:1px solid rgba(178,182,189,.15);padding:11px 20px;border-radius:8px">BACnet</span>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section style="max-width:1240px;margin:0 auto;padding:48px 32px 84px">
+  <div style="position:relative;overflow:hidden;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:24px;padding:56px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap">
+    <div style="position:absolute;top:-80px;right:-40px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.26),transparent 62%);filter:blur(16px);pointer-events:none"></div>
+    <div style="position:relative;z-index:2;max-width:560px">
+      <h2 style="font-size:34px;line-height:1.12;letter-spacing:-.8px;font-weight:700;margin:0 0 12px;color:#fff" data-k="ctaTitle">Обсудим ваш объект?</h2>
+      <p style="font-size:16.5px;line-height:1.6;color:#b2b6bd;margin:0" data-k="ctaSub">Бесплатная консультация и предварительный расчёт в течение рабочего дня.</p>
+    </div>
+    <a class="nx-cta" href="kontakty.html" style="position:relative;z-index:2;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:15px 28px;border-radius:8px;text-decoration:none;white-space:nowrap" data-k="cta1">Заказать консультацию</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="border-top:1px solid rgba(178,182,189,.1);background:#000">
+  <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px">
+    <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(178,182,189,.1)">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px">
+          <span style="width:34px;height:34px;border-radius:8px;background:#2b7fff;display:flex;align-items:center;justify-content:center"><svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span style="font-size:17px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+        </div>
+        <p style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0 0 16px;max-width:300px" data-k="footTagline">Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.</p>
+        <a href="https://neksora.pro" style="font-size:14px;color:#2b7fff;text-decoration:none;font-weight:600">neksora.pro</a>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc0title">Услуги</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0a">Умный дом</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0b">Автоматизация бизнеса</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0c">Промышленная автоматизация</a>
+          <a class="nx-link" href="uslugi.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc0d">Безопасность</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc1title">Компания</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="kompaniya.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1a">О нас</a>
+          <a class="nx-link" href="kompaniya.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1b">Проекты</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1c">Партнёры</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc1d">Контакты</a>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px" data-k="fc2title">Заказчикам</div>
+        <div style="display:flex;flex-direction:column;gap:11px">
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2a">Частным лицам</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2b">Бизнесу</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2c">Госсектору</a>
+          <a class="nx-link" href="kontakty.html" style="font-size:14px;color:#b2b6bd;text-decoration:none" data-k="fc2d">Сервис</a>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:12px">
+      <span style="font-size:13px;color:#656a76" data-k="footCopy">© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.</span>
+      <span style="font-size:13px;color:#656a76" data-k="footLegal">Политика конфиденциальности · neksora.pro</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+<script src="neksora.js"></script>
+<script>
+window.NX_COPY = {
+  ru: {
+    pageTitle:'О компании — НЭКСОРА',
+    nav0:'Главная',nav1:'Услуги',nav2:'О компании',nav3:'Контакты',
+    cta1:'Заказать консультацию',
+    headEyebrow:'О компании',
+    headTitle:'Инженеры автоматизации и безопасности',
+    headSub:'НЭКСОРА проектирует и реализует системы автоматизации и безопасности для частных, коммерческих и государственных заказчиков. Мы берём объект под ключ — и отвечаем за результат на всём жизненном цикле.',
+    stat0v:'2024',stat0l:'год основания',
+    stat1v:'R&D',stat1l:'наука и инжиниринг',
+    stat2v:'24/7',stat2l:'мониторинг и поддержка',
+    stat3v:'ГОСТ',stat3l:'проектирование по нормам',
+    princEyebrow:'Принципы',princTitle:'Как мы подходим к каждому проекту',
+    pr0title:'Инженерный подход',pr0desc:'Считаем нагрузки, резервируем, документируем. Решения, которые работают годами, а не до первого сбоя.',
+    pr1title:'Единая ответственность',pr1desc:'Проект, монтаж и сервис — один подрядчик. Никаких разрывов в зоне ответственности между этапами.',
+    pr2title:'Стандарты и нормы',pr2desc:'Соответствие ГОСТ, СП и отраслевым требованиям. Полный пакет исполнительной документации.',
+    pr3title:'Сервис на годы',pr3desc:'Гарантия, мониторинг и быстрая реакция. Сопровождаем системы на всём жизненном цикле объекта.',
+    audEyebrow:'Для кого',audTitle:'Работаем с частными, коммерческими и государственными заказчиками',
+    aud0title:'Частным заказчикам',aud0desc:'Дома, квартиры и резиденции под ключ — от проекта до сервисного сопровождения.',
+    aud1title:'Бизнесу',aud1desc:'Офисы, ритейл, отели и склады: снижаем издержки, простои и операционные риски.',
+    aud2title:'Госсектору',aud2desc:'Объекты по 44-ФЗ и 223-ФЗ — соответствие нормам и полная документация.',
+    partEyebrow:'Технологии',partTitle:'Работаем на проверенном оборудовании ведущих вендоров',
+    ctaTitle:'Обсудим ваш объект?',ctaSub:'Бесплатная консультация и предварительный расчёт в течение рабочего дня.',
+    footTagline:'Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.',
+    fc0title:'Услуги',fc0a:'Умный дом',fc0b:'Автоматизация бизнеса',fc0c:'Промышленная автоматизация',fc0d:'Безопасность',
+    fc1title:'Компания',fc1a:'О нас',fc1b:'Проекты',fc1c:'Партнёры',fc1d:'Контакты',
+    fc2title:'Заказчикам',fc2a:'Частным лицам',fc2b:'Бизнесу',fc2c:'Госсектору',fc2d:'Сервис',
+    footCopy:'© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.',
+    footLegal:'Политика конфиденциальности · neksora.pro',
+  },
+  en: {
+    pageTitle:'About — NEKSORA',
+    nav0:'Home',nav1:'Services',nav2:'About',nav3:'Contact',
+    cta1:'Request a consultation',
+    headEyebrow:'About',
+    headTitle:'Automation and security engineers',
+    headSub:'NEKSORA designs and delivers automation and security systems for private, commercial and government clients. We take the facility turnkey — and stay accountable across its entire lifecycle.',
+    stat0v:'2024',stat0l:'founded',
+    stat1v:'R&D',stat1l:'science & engineering',
+    stat2v:'24/7',stat2l:'monitoring & support',
+    stat3v:'GOST',stat3l:'designed to standards',
+    princEyebrow:'Principles',princTitle:'How we approach every project',
+    pr0title:'Engineering-first',pr0desc:'We size loads, build in redundancy and document everything. Systems that last for years, not until the first failure.',
+    pr1title:'Single accountability',pr1desc:'Design, installation and service — one contractor. No gaps in responsibility between stages.',
+    pr2title:'Standards & compliance',pr2desc:'Compliance with national codes and industry requirements. A complete as-built documentation package.',
+    pr3title:'Service for years',pr3desc:'Warranty, monitoring and fast response. We support systems across the facility lifecycle.',
+    audEyebrow:'Who we serve',audTitle:'Working with private, commercial and government clients',
+    aud0title:'Private clients',aud0desc:'Homes, apartments and residences turnkey — from design to ongoing service.',
+    aud1title:'Business',aud1desc:'Offices, retail, hotels and warehouses: we cut costs, downtime and operational risk.',
+    aud2title:'Government',aud2desc:'Facilities under public-procurement law — full compliance and documentation.',
+    partEyebrow:'Technology',partTitle:'Built on proven equipment from leading vendors',
+    ctaTitle:'Shall we discuss your facility?',ctaSub:'A free consultation and preliminary estimate within one business day.',
+    footTagline:'Design and delivery of automation and security systems for home, business and industry.',
+    fc0title:'Services',fc0a:'Smart home',fc0b:'Business automation',fc0c:'Industrial automation',fc0d:'Security',
+    fc1title:'Company',fc1a:'About',fc1b:'Projects',fc1c:'Partners',fc1d:'Contact',
+    fc2title:'Clients',fc2a:'Private',fc2b:'Business',fc2c:'Government',fc2d:'Service',
+    footCopy:'© 2026 KSP-Avtomatika LLC · NEKSORA. All rights reserved.',
+    footLegal:'Privacy policy · neksora.pro',
+  }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#000;color:#fff;font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(43,127,255,.32)}
+
+@keyframes nx-rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes nx-glow{0%,100%{opacity:.55}50%{opacity:.9}}
+@keyframes nx-ping{0%{transform:scale(1);opacity:.6}80%,100%{transform:scale(2.4);opacity:0}}
+
+.nx-link{transition:color .14s ease}
+.nx-link:hover{color:#fff !important}
+.nx-card{transition:border-color .15s ease,transform .15s ease,background .15s ease}
+.nx-card:hover{border-color:rgba(43,127,255,.5) !important;transform:translateY(-4px)}
+.nx-cta{transition:filter .14s ease,transform .1s ease,box-shadow .15s ease}
+.nx-cta:hover{filter:brightness(1.08);box-shadow:0 8px 30px rgba(43,127,255,.35)}
+.nx-cta:active{transform:scale(.98)}
+.nx-ghost{transition:border-color .14s ease,color .14s ease,background .14s ease}
+.nx-ghost:hover{border-color:rgba(178,182,189,.45) !important;background:rgba(255,255,255,.03) !important}
+.nx-in{transition:border-color .14s ease,background .14s ease}
+.nx-in:focus{outline:none;border-color:#2b7fff !important;background:#1b1f27 !important}
+.nx-seg{transition:color .14s ease,background .14s ease}
+.nx-chip{transition:border-color .14s ease,color .14s ease}
+.nx-chip:hover{border-color:rgba(43,127,255,.4) !important;color:#fff !important}
+
+/* Burger: hidden on desktop */
+.nx-burger{display:none}
+@media(max-width:760px){
+  .nx-root header nav{display:none !important}
+  .nx-headactions{display:none !important}
+  .nx-burger{display:flex !important}
+}
+@media(min-width:761px){
+  .nx-mobile-menu{display:none !important}
+}
+@media(max-width:820px){
+  .nx-root [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  .nx-root h1{font-size:44px !important;letter-spacing:-1.2px !important}
+}
+@media(max-width:640px){
+  .nx-root section{padding-left:20px !important;padding-right:20px !important}
+  .nx-root header>div{padding-left:18px !important;padding-right:18px !important}
+  .nx-root h1{font-size:32px !important;letter-spacing:-.8px !important}
+  .nx-root h2{font-size:25px !important;letter-spacing:-.5px !important}
+  .nx-root header .nx-cta{padding:9px 12px !important;font-size:13px !important}
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Контакты — НЭКСОРА</title>
+<meta name="description" content="Свяжитесь с НЭКСОРА. Телефон, почта, офис. Оставьте заявку на консультацию.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="neksora.css">
+<script>
+window.NX_COPY = {
+  ru: {
+    nav0: 'Главная', nav1: 'Услуги', nav2: 'О компании', nav3: 'Контакты',
+    cta1: 'Заказать консультацию',
+    headEyebrow: 'Контакты',
+    headTitle: 'Расскажите о вашем объекте',
+    headSub: 'Ответим в течение рабочего дня, подготовим концепцию и предварительный расчёт. Консультация — бесплатно.',
+    con0l: 'Телефон', con0v: '+7 (916) 995-57-77',
+    con1l: 'Почта', con1v: 'hello@neksora.pro',
+    con2l: 'Офис', con2v: 'Москва, по записи',
+    con3l: 'Часы работы', con3v: 'Пн–Пт, 9:00–19:00',
+    mapLabel: 'Москва',
+    formTitle: 'Оставить заявку',
+    formSub: 'Заполните форму — и мы свяжемся с вами для уточнения деталей проекта.',
+    fName: 'Имя', fNamePh: 'Как к вам обращаться',
+    fPhone: 'Телефон', fPhoneErr: 'Укажите контактный телефон',
+    fEmail: 'Почта',
+    fType: 'Тип объекта',
+    ot0: 'Дом / квартира', ot1: 'Бизнес', ot2: 'Промышленность', ot3: 'Госсектор',
+    fMsg: 'Комментарий', fMsgPh: 'Кратко об объекте и задаче',
+    fSubmit: 'Отправить заявку',
+    fPrivacy: 'Нажимая кнопку, вы соглашаетесь на обработку персональных данных.',
+    okTitle: 'Заявка отправлена',
+    okText: 'Спасибо! Свяжемся с вами в течение рабочего дня и обсудим детали проекта.',
+    okReset: 'Отправить ещё одну',
+    req0l: 'Компания', req0v: 'ООО «КСП-Автоматика»',
+    req1l: 'ИНН', req1v: '9718264327',
+    req2l: 'Основана', req2v: 'июль 2024, Москва',
+    req3l: 'Сайт', req3v: 'neksora.pro',
+    footTagline: 'Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.',
+    fc0title: 'Услуги', fc0a: 'Умный дом', fc0b: 'Автоматизация бизнеса', fc0c: 'Промышленная автоматизация', fc0d: 'Безопасность',
+    fc1title: 'Компания', fc1a: 'О нас', fc1b: 'Проекты', fc1c: 'Партнёры', fc1d: 'Контакты',
+    fc2title: 'Заказчикам', fc2a: 'Частным лицам', fc2b: 'Бизнесу', fc2c: 'Госсектору', fc2d: 'Сервис',
+    footCopy: '© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.',
+    footLegal: 'Политика конфиденциальности · neksora.pro',
+  },
+  en: {
+    nav0: 'Home', nav1: 'Services', nav2: 'About', nav3: 'Contact',
+    cta1: 'Request a consultation',
+    headEyebrow: 'Contact',
+    headTitle: 'Tell us about your facility',
+    headSub: 'We reply within one business day with a concept and a preliminary estimate. The consultation is free.',
+    con0l: 'Phone', con0v: '+7 (916) 995-57-77',
+    con1l: 'Email', con1v: 'hello@neksora.pro',
+    con2l: 'Office', con2v: 'Moscow, by appointment',
+    con3l: 'Hours', con3v: 'Mon–Fri, 9:00–19:00',
+    mapLabel: 'Moscow',
+    formTitle: 'Submit a request',
+    formSub: 'Fill in the form and we will contact you to clarify the details of your project.',
+    fName: 'Name', fNamePh: 'How should we address you',
+    fPhone: 'Phone', fPhoneErr: 'Please provide a contact phone',
+    fEmail: 'Email',
+    fType: 'Facility type',
+    ot0: 'Home', ot1: 'Business', ot2: 'Industry', ot3: 'Government',
+    fMsg: 'Comment', fMsgPh: 'Briefly about the facility and task',
+    fSubmit: 'Send request',
+    fPrivacy: 'By submitting, you agree to the processing of personal data.',
+    okTitle: 'Request sent',
+    okText: 'Thank you! We will contact you within one business day to discuss the project.',
+    okReset: 'Send another',
+    req0l: 'Company', req0v: 'KSP-Avtomatika LLC',
+    req1l: 'Tax ID (INN)', req1v: '9718264327',
+    req2l: 'Founded', req2v: 'July 2024, Moscow',
+    req3l: 'Website', req3v: 'neksora.pro',
+    footTagline: 'Design and delivery of automation and security systems for home, business and industry.',
+    fc0title: 'Services', fc0a: 'Smart home', fc0b: 'Business automation', fc0c: 'Industrial automation', fc0d: 'Security',
+    fc1title: 'Company', fc1a: 'About', fc1b: 'Projects', fc1c: 'Partners', fc1d: 'Contact',
+    fc2title: 'Clients', fc2a: 'Private', fc2b: 'Business', fc2c: 'Government', fc2d: 'Service',
+    footCopy: '© 2026 KSP-Avtomatika LLC · NEKSORA. All rights reserved.',
+    footLegal: 'Privacy policy · neksora.pro',
+  }
+};
+</script>
+</head>
+<body>
+<div class="nx-root" style="background:#000;color:#fff;font-family:'Inter',system-ui,sans-serif;min-height:100vh;overflow-x:hidden;position:relative">
+
+  <!-- NAV -->
+  <header style="position:sticky;top:0;z-index:50;background:rgba(0,0,0,.72);backdrop-filter:blur(14px);border-bottom:1px solid rgba(178,182,189,.12)">
+    <div style="max-width:1240px;margin:0 auto;height:68px;padding:0 32px;display:flex;align-items:center;gap:32px">
+      <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0">
+        <span style="width:38px;height:38px;border-radius:9px;background:#2b7fff;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 18px rgba(43,127,255,.4)">
+          <svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span style="font-size:19px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+      </a>
+      <nav style="display:flex;gap:30px;margin-left:18px">
+        <a class="nx-link" href="index.html" data-k="nav0" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none">Главная</a>
+        <a class="nx-link" href="uslugi.html" data-k="nav1" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none">Услуги</a>
+        <a class="nx-link" href="kompaniya.html" data-k="nav2" style="font-size:14.5px;font-weight:500;color:#b2b6bd;text-decoration:none">О компании</a>
+        <a class="nx-link" href="kontakty.html" data-k="nav3" style="font-size:14.5px;font-weight:600;color:#fff;text-decoration:none">Контакты</a>
+      </nav>
+      <div class="nx-headactions" style="margin-left:auto;display:flex;align-items:center;gap:14px">
+        <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+          <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+          <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:12.5px;font-weight:600;padding:5px 12px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+        </div>
+        <a class="nx-cta" href="#form" data-k="cta1" style="background:#2b7fff;color:#fff;font-size:14px;font-weight:600;padding:10px 18px;border-radius:8px;text-decoration:none">Заказать консультацию</a>
+      </div>
+      <button id="nx-burger" class="nx-burger" aria-label="Menu" style="display:none;margin-left:auto;align-items:center;justify-content:center;width:42px;height:42px;border-radius:9px;background:#15181e;border:1px solid rgba(178,182,189,.15);cursor:pointer;color:#fff">
+        <svg id="nx-burger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg id="nx-burger-close" width="20" height="20" viewBox="0 0 24 24" fill="none" style="display:none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div id="nx-mobile-menu" class="nx-mobile-menu" style="border-top:1px solid rgba(178,182,189,.12);background:rgba(0,0,0,.96);backdrop-filter:blur(14px);padding:14px 20px 22px">
+      <div style="display:flex;flex-direction:column;gap:2px">
+        <a data-close-menu href="index.html" data-k="nav0" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px">Главная</a>
+        <a data-close-menu href="uslugi.html" data-k="nav1" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px">Услуги</a>
+        <a data-close-menu href="kompaniya.html" data-k="nav2" style="font-size:16px;font-weight:500;color:#b2b6bd;text-decoration:none;padding:12px 6px">О компании</a>
+        <a data-close-menu href="kontakty.html" data-k="nav3" style="font-size:16px;font-weight:600;color:#fff;text-decoration:none;padding:12px 6px">Контакты</a>
+      </div>
+      <div style="height:1px;background:rgba(178,182,189,.12);margin:14px 0"></div>
+      <div style="display:flex;align-items:center;gap:12px">
+        <div style="display:flex;align-items:center;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:9999px;padding:3px">
+          <button class="nx-seg" data-lang="ru" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:#2b7fff;color:#fff">RU</button>
+          <button class="nx-seg" data-lang="en" style="border:none;cursor:pointer;font-family:inherit;font-size:13px;font-weight:600;padding:7px 16px;border-radius:9999px;background:transparent;color:#b2b6bd">EN</button>
+        </div>
+        <a class="nx-cta" data-close-menu href="#form" data-k="cta1" style="flex:1;text-align:center;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:13px 18px;border-radius:8px;text-decoration:none">Заказать консультацию</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGE HEADER -->
+  <section style="position:relative;max-width:1240px;margin:0 auto;padding:64px 32px 44px;overflow:hidden">
+    <div style="position:absolute;top:-60px;left:30%;width:520px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(43,127,255,.22),transparent 64%);filter:blur(20px);animation:nx-glow 8s ease-in-out infinite;pointer-events:none"></div>
+    <div style="position:relative;z-index:2;max-width:680px">
+      <div style="display:flex;align-items:center;gap:10px;font-size:13px;color:#656a76;margin-bottom:22px">
+        <a href="index.html" class="nx-link" data-k="nav0" style="color:#656a76;text-decoration:none">Главная</a>
+        <span style="opacity:.5">/</span>
+        <span style="color:#9cc4ff" data-k="nav3">Контакты</span>
+      </div>
+      <div data-k="headEyebrow" style="font-size:12px;font-weight:600;letter-spacing:.14em;color:#2b7fff;text-transform:uppercase;margin-bottom:16px">Контакты</div>
+      <h1 data-k="headTitle" style="font-size:52px;line-height:1.06;letter-spacing:-1.7px;font-weight:700;margin:0 0 18px;color:#fff;text-wrap:balance">Расскажите о вашем объекте</h1>
+      <p data-k="headSub" style="font-size:18px;line-height:1.6;color:#b2b6bd;margin:0;max-width:560px">Ответим в течение рабочего дня, подготовим концепцию и предварительный расчёт. Консультация — бесплатно.</p>
+    </div>
+  </section>
+
+  <!-- CONTACT + FORM -->
+  <section id="form" style="max-width:1240px;margin:0 auto;padding:8px 32px 40px">
+    <div style="display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:start">
+
+      <!-- left: contact cards + map -->
+      <div>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:24px">
+
+          <!-- Phone -->
+          <div class="nx-card" style="display:flex;align-items:center;gap:16px;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:20px 22px">
+            <div style="flex-shrink:0;width:46px;height:46px;border-radius:11px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center;color:#7fb2ff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z" stroke="#7fb2ff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div data-k="con0l" style="font-size:12px;color:#656a76;letter-spacing:.04em">Телефон</div>
+              <div data-k="con0v" style="font-size:17px;color:#fff;font-weight:600;margin-top:2px">+7 (916) 995-57-77</div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="nx-card" style="display:flex;align-items:center;gap:16px;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:20px 22px">
+            <div style="flex-shrink:0;width:46px;height:46px;border-radius:11px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center;color:#7fb2ff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#7fb2ff" stroke-width="1.6"/><path d="M3.5 6.5L12 12l8.5-5.5" stroke="#7fb2ff" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div data-k="con1l" style="font-size:12px;color:#656a76;letter-spacing:.04em">Почта</div>
+              <div data-k="con1v" style="font-size:17px;color:#fff;font-weight:600;margin-top:2px">hello@neksora.pro</div>
+            </div>
+          </div>
+
+          <!-- Office -->
+          <div class="nx-card" style="display:flex;align-items:center;gap:16px;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:20px 22px">
+            <div style="flex-shrink:0;width:46px;height:46px;border-radius:11px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center;color:#7fb2ff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-5.5 7-11a7 7 0 10-14 0c0 5.5 7 11 7 11z" stroke="#7fb2ff" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5" stroke="#7fb2ff" stroke-width="1.6"/></svg>
+            </div>
+            <div>
+              <div data-k="con2l" style="font-size:12px;color:#656a76;letter-spacing:.04em">Офис</div>
+              <div data-k="con2v" style="font-size:17px;color:#fff;font-weight:600;margin-top:2px">Москва, по записи</div>
+            </div>
+          </div>
+
+          <!-- Hours -->
+          <div class="nx-card" style="display:flex;align-items:center;gap:16px;background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:14px;padding:20px 22px">
+            <div style="flex-shrink:0;width:46px;height:46px;border-radius:11px;background:rgba(43,127,255,.12);border:1px solid rgba(43,127,255,.28);display:flex;align-items:center;justify-content:center;color:#7fb2ff">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="8.5" stroke="#7fb2ff" stroke-width="1.6"/><path d="M12 7.5V12l3 2" stroke="#7fb2ff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div data-k="con3l" style="font-size:12px;color:#656a76;letter-spacing:.04em">Часы работы</div>
+              <div data-k="con3v" style="font-size:17px;color:#fff;font-weight:600;margin-top:2px">Пн–Пт, 9:00–19:00</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- map placeholder -->
+        <div style="position:relative;border-radius:16px;overflow:hidden;border:1px solid rgba(178,182,189,.15);height:240px;background:radial-gradient(circle at 50% 45%,#16202f,#0a0e16 70%)">
+          <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(43,127,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(43,127,255,.07) 1px,transparent 1px);background-size:38px 38px"></div>
+          <div style="position:absolute;left:18%;top:30%;width:60%;height:5px;background:rgba(127,178,255,.18);border-radius:4px;transform:rotate(-8deg)"></div>
+          <div style="position:absolute;left:30%;top:62%;width:48%;height:5px;background:rgba(127,178,255,.12);border-radius:4px;transform:rotate(6deg)"></div>
+          <div style="position:absolute;left:50%;top:45%;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center">
+            <div style="position:relative;width:18px;height:18px;display:flex;align-items:center;justify-content:center">
+              <span style="position:absolute;width:18px;height:18px;border-radius:50%;background:rgba(43,127,255,.6);animation:nx-ping 2.4s ease-out infinite"></span>
+              <span style="position:relative;width:12px;height:12px;border-radius:50%;background:#2b7fff;border:2px solid #0a0e16;box-shadow:0 0 12px rgba(43,127,255,.8)"></span>
+            </div>
+            <span data-k="mapLabel" style="margin-top:10px;font-size:13px;font-weight:600;color:#cdd2da;background:rgba(8,11,18,.7);backdrop-filter:blur(6px);padding:5px 12px;border-radius:8px;border:1px solid rgba(178,182,189,.15)">Москва</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- right: form -->
+      <div style="background:#15181e;border:1px solid rgba(178,182,189,.15);border-radius:20px;padding:36px">
+        <div id="form-panel">
+          <h2 data-k="formTitle" style="font-size:24px;font-weight:700;letter-spacing:-.5px;margin:0 0 6px;color:#fff">Оставить заявку</h2>
+          <p data-k="formSub" style="font-size:15px;line-height:1.55;color:#b2b6bd;margin:0 0 24px">Заполните форму — и мы свяжемся с вами для уточнения деталей проекта.</p>
+          <form id="contact-form" style="display:flex;flex-direction:column;gap:16px" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+              <div>
+                <label data-k="fName" style="display:block;font-size:13px;font-weight:600;color:#d2d5da;margin-bottom:8px">Имя</label>
+                <input id="f-name" class="nx-in" type="text" data-kp="fNamePh" placeholder="Как к вам обращаться" style="width:100%;background:#0d1016;border:1px solid #3b3d45;border-radius:8px;padding:13px 14px;font-size:15px;color:#fff;font-family:inherit">
+              </div>
+              <div>
+                <label data-k="fPhone" style="display:block;font-size:13px;font-weight:600;color:#d2d5da;margin-bottom:8px">Телефон</label>
+                <input id="f-phone" class="nx-in" type="tel" placeholder="+7 (___) ___-__-__" style="width:100%;background:#0d1016;border:1px solid #3b3d45;border-radius:8px;padding:13px 14px;font-size:15px;color:#fff;font-family:inherit">
+              </div>
+            </div>
+            <div id="phone-err" style="display:none;font-size:12.5px;color:#e62b1e;margin-top:-8px" data-k="fPhoneErr">Укажите контактный телефон</div>
+            <div>
+              <label data-k="fEmail" style="display:block;font-size:13px;font-weight:600;color:#d2d5da;margin-bottom:8px">Почта</label>
+              <input id="f-email" class="nx-in" type="email" placeholder="you@company.com" style="width:100%;background:#0d1016;border:1px solid #3b3d45;border-radius:8px;padding:13px 14px;font-size:15px;color:#fff;font-family:inherit">
+            </div>
+            <div>
+              <label data-k="fType" style="display:block;font-size:13px;font-weight:600;color:#d2d5da;margin-bottom:8px">Тип объекта</label>
+              <div id="ot-group" style="display:flex;flex-wrap:wrap;gap:8px">
+                <button type="button" class="nx-seg ot-btn ot-active" data-ot="0" data-k="ot0" style="cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:9999px;border:1px solid rgba(43,127,255,.45);background:rgba(43,127,255,.14);color:#9cc4ff">Дом / квартира</button>
+                <button type="button" class="nx-seg ot-btn" data-ot="1" data-k="ot1" style="cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:9999px;border:1px solid rgba(178,182,189,.14);background:#1f232b;color:#d2d5da">Бизнес</button>
+                <button type="button" class="nx-seg ot-btn" data-ot="2" data-k="ot2" style="cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:9999px;border:1px solid rgba(178,182,189,.14);background:#1f232b;color:#d2d5da">Промышленность</button>
+                <button type="button" class="nx-seg ot-btn" data-ot="3" data-k="ot3" style="cursor:pointer;font-family:inherit;font-size:13px;font-weight:500;padding:9px 14px;border-radius:9999px;border:1px solid rgba(178,182,189,.14);background:#1f232b;color:#d2d5da">Госсектор</button>
+              </div>
+            </div>
+            <div>
+              <label data-k="fMsg" style="display:block;font-size:13px;font-weight:600;color:#d2d5da;margin-bottom:8px">Комментарий</label>
+              <textarea id="f-msg" class="nx-in" data-kp="fMsgPh" placeholder="Кратко об объекте и задаче" rows="4" style="width:100%;background:#0d1016;border:1px solid #3b3d45;border-radius:8px;padding:13px 14px;font-size:15px;color:#fff;font-family:inherit;resize:vertical"></textarea>
+            </div>
+            <button type="submit" id="f-submit" class="nx-cta" data-k="fSubmit" style="margin-top:4px;width:100%;background:#2b7fff;color:#fff;font-size:15px;font-weight:600;padding:15px;border:none;border-radius:8px;cursor:pointer;font-family:inherit">Отправить заявку</button>
+            <p data-k="fPrivacy" style="font-size:12px;color:#656a76;margin:0;line-height:1.5;text-align:center">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          </form>
+        </div>
+        <div id="form-success" style="display:none;text-align:center;padding:44px 12px;animation:nx-rise .4s ease both">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(43,127,255,.14);border:1px solid rgba(43,127,255,.4);display:flex;align-items:center;justify-content:center;margin:0 auto 22px">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-11" stroke="#2b7fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 data-k="okTitle" style="font-size:25px;font-weight:700;color:#fff;margin:0 0 10px;letter-spacing:-.4px">Заявка отправлена</h3>
+          <p data-k="okText" style="font-size:15.5px;line-height:1.6;color:#b2b6bd;margin:0 auto 24px;max-width:340px">Спасибо! Свяжемся с вами в течение рабочего дня и обсудим детали проекта.</p>
+          <button id="form-reset" class="nx-ghost" data-k="okReset" style="background:transparent;color:#fff;font-size:14px;font-weight:600;padding:11px 20px;border-radius:8px;cursor:pointer;font-family:inherit;border:1px solid rgba(178,182,189,.25)">Отправить ещё одну</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUISITES -->
+  <section style="max-width:1240px;margin:0 auto;padding:32px 32px 84px">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:36px;border-top:1px solid rgba(178,182,189,.1)">
+      <div>
+        <div data-k="req0l" style="font-size:12px;color:#656a76;letter-spacing:.04em;margin-bottom:6px">Компания</div>
+        <div data-k="req0v" style="font-size:15px;color:#d2d5da;font-weight:500">ООО «КСП-Автоматика»</div>
+      </div>
+      <div>
+        <div data-k="req1l" style="font-size:12px;color:#656a76;letter-spacing:.04em;margin-bottom:6px">ИНН</div>
+        <div data-k="req1v" style="font-size:15px;color:#d2d5da;font-weight:500">9718264327</div>
+      </div>
+      <div>
+        <div data-k="req2l" style="font-size:12px;color:#656a76;letter-spacing:.04em;margin-bottom:6px">Основана</div>
+        <div data-k="req2v" style="font-size:15px;color:#d2d5da;font-weight:500">июль 2024, Москва</div>
+      </div>
+      <div>
+        <div data-k="req3l" style="font-size:12px;color:#656a76;letter-spacing:.04em;margin-bottom:6px">Сайт</div>
+        <div data-k="req3v" style="font-size:15px;color:#d2d5da;font-weight:500">neksora.pro</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="border-top:1px solid rgba(178,182,189,.1);background:#000">
+    <div style="max-width:1240px;margin:0 auto;padding:56px 32px 40px">
+      <div style="display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(178,182,189,.1)">
+        <div>
+          <div style="display:flex;align-items:center;gap:11px;margin-bottom:16px">
+            <span style="width:34px;height:34px;border-radius:8px;background:#2b7fff;display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#070B14" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span style="font-size:17px;font-weight:700;letter-spacing:.18em;color:#fff">НЭКСОРА</span>
+          </div>
+          <p data-k="footTagline" style="font-size:14.5px;line-height:1.6;color:#b2b6bd;margin:0 0 16px;max-width:300px">Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.</p>
+          <a href="https://neksora.pro" style="font-size:14px;color:#2b7fff;text-decoration:none;font-weight:600">neksora.pro</a>
+        </div>
+        <div>
+          <div data-k="fc0title" style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px">Услуги</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a class="nx-link" href="uslugi.html" data-k="fc0a" style="font-size:14px;color:#b2b6bd;text-decoration:none">Умный дом</a>
+            <a class="nx-link" href="uslugi.html" data-k="fc0b" style="font-size:14px;color:#b2b6bd;text-decoration:none">Автоматизация бизнеса</a>
+            <a class="nx-link" href="uslugi.html" data-k="fc0c" style="font-size:14px;color:#b2b6bd;text-decoration:none">Промышленная автоматизация</a>
+            <a class="nx-link" href="uslugi.html" data-k="fc0d" style="font-size:14px;color:#b2b6bd;text-decoration:none">Безопасность</a>
+          </div>
+        </div>
+        <div>
+          <div data-k="fc1title" style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px">Компания</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a class="nx-link" href="kompaniya.html" data-k="fc1a" style="font-size:14px;color:#b2b6bd;text-decoration:none">О нас</a>
+            <a class="nx-link" href="kompaniya.html" data-k="fc1b" style="font-size:14px;color:#b2b6bd;text-decoration:none">Проекты</a>
+            <a class="nx-link" href="kompaniya.html" data-k="fc1c" style="font-size:14px;color:#b2b6bd;text-decoration:none">Партнёры</a>
+            <a class="nx-link" href="kontakty.html" data-k="fc1d" style="font-size:14px;color:#b2b6bd;text-decoration:none">Контакты</a>
+          </div>
+        </div>
+        <div>
+          <div data-k="fc2title" style="font-size:12px;font-weight:600;letter-spacing:.1em;color:#656a76;text-transform:uppercase;margin-bottom:16px">Заказчикам</div>
+          <div style="display:flex;flex-direction:column;gap:11px">
+            <a class="nx-link" href="kontakty.html" data-k="fc2a" style="font-size:14px;color:#b2b6bd;text-decoration:none">Частным лицам</a>
+            <a class="nx-link" href="kontakty.html" data-k="fc2b" style="font-size:14px;color:#b2b6bd;text-decoration:none">Бизнесу</a>
+            <a class="nx-link" href="kontakty.html" data-k="fc2c" style="font-size:14px;color:#b2b6bd;text-decoration:none">Госсектору</a>
+            <a class="nx-link" href="kontakty.html" data-k="fc2d" style="font-size:14px;color:#b2b6bd;text-decoration:none">Сервис</a>
+          </div>
+        </div>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:12px">
+        <span data-k="footCopy" style="font-size:13px;color:#656a76">© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.</span>
+        <span data-k="footLegal" style="font-size:13px;color:#656a76">Политика конфиденциальности · neksora.pro</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  // Object type pill selector
+  var otBtns = document.querySelectorAll('.ot-btn');
+  otBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      otBtns.forEach(function(b){
+        b.style.background = '#1f232b';
+        b.style.color = '#d2d5da';
+        b.style.borderColor = 'rgba(178,182,189,.14)';
+        b.classList.remove('ot-active');
+      });
+      btn.style.background = 'rgba(43,127,255,.14)';
+      btn.style.color = '#9cc4ff';
+      btn.style.borderColor = 'rgba(43,127,255,.45)';
+      btn.classList.add('ot-active');
+    });
+  });
+
+  // Form validation + submit
+  var form = document.getElementById('contact-form');
+  var phoneInput = document.getElementById('f-phone');
+  var phoneErr = document.getElementById('phone-err');
+  var formPanel = document.getElementById('form-panel');
+  var formSuccess = document.getElementById('form-success');
+  var formReset = document.getElementById('form-reset');
+
+  phoneInput.addEventListener('input', function(){
+    if(phoneInput.value.trim()){
+      phoneInput.style.borderColor = '#3b3d45';
+      phoneErr.style.display = 'none';
+    }
+  });
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!phoneInput.value.trim()){
+      phoneInput.style.borderColor = '#e62b1e';
+      phoneErr.style.display = 'block';
+      return;
+    }
+    formPanel.style.display = 'none';
+    formSuccess.style.display = 'block';
+  });
+
+  formReset.addEventListener('click', function(){
+    form.reset();
+    otBtns.forEach(function(b, i){
+      if(i === 0){
+        b.style.background = 'rgba(43,127,255,.14)';
+        b.style.color = '#9cc4ff';
+        b.style.borderColor = 'rgba(43,127,255,.45)';
+        b.classList.add('ot-active');
+      } else {
+        b.style.background = '#1f232b';
+        b.style.color = '#d2d5da';
+        b.style.borderColor = 'rgba(178,182,189,.14)';
+        b.classList.remove('ot-active');
+      }
+    });
+    phoneInput.style.borderColor = '#3b3d45';
+    phoneErr.style.display = 'none';
+    formSuccess.style.display = 'none';
+    formPanel.style.display = 'block';
+  });
+})();
+</script>
+<script src="neksora.js"></script>
+</body>
+</html>
