@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Контакты НЭКСОРА: телефон, почта, офис в Москве и заявка на инженерную консультацию по автоматизации и системам безопасности.">
+<title>Контакты — НЭКСОРА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="neksora.css">
+</head>
+<body>
+<div class="nx-root nx-contact-page">
+
+<header class="nx-header">
+  <div class="nx-container nx-header__inner">
+    <a href="index.html" class="nx-logo" aria-label="НЭКСОРА">
+      <span class="nx-logo__mark"><svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#06101f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="nx-logo__text">НЭКСОРА</span>
+    </a>
+    <nav class="nx-nav" aria-label="Главная навигация">
+      <a class="nx-link" href="index.html" data-k="nav0">Главная</a>
+      <a class="nx-link" href="uslugi.html" data-k="nav1">Услуги</a>
+      <a class="nx-link" href="kompaniya.html" data-k="nav2">О компании</a>
+      <a class="nx-link" href="kontakty.html" data-k="nav3" aria-current="page">Контакты</a>
+    </nav>
+    <div class="nx-headactions">
+      <div class="nx-lang" aria-label="Переключение языка">
+        <button class="nx-seg" data-lang="ru" type="button">RU</button>
+        <button class="nx-seg" data-lang="en" type="button">EN</button>
+      </div>
+      <a class="nx-cta nx-btn nx-btn--primary" href="#request" data-k="cta1">Заказать консультацию</a>
+    </div>
+    <button id="nx-burger" class="nx-burger" aria-label="Menu" aria-expanded="false" type="button">
+      <svg id="nx-burger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg id="nx-burger-close" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="nx-mobile-menu" class="nx-mobile-menu">
+    <div class="nx-container nx-mobile-menu__inner">
+      <a data-close-menu href="index.html" data-k="nav0">Главная</a>
+      <a data-close-menu href="uslugi.html" data-k="nav1">Услуги</a>
+      <a data-close-menu href="kompaniya.html" data-k="nav2">О компании</a>
+      <a data-close-menu href="kontakty.html" data-k="nav3">Контакты</a>
+      <div class="nx-mobile-menu__actions">
+        <div class="nx-lang"><button class="nx-seg" data-lang="ru" type="button">RU</button><button class="nx-seg" data-lang="en" type="button">EN</button></div>
+        <a class="nx-cta nx-btn nx-btn--primary" data-close-menu href="#request" data-k="cta1">Заказать консультацию</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="nx-contact-hero nx-section">
+    <div class="nx-bg-grid" aria-hidden="true"></div>
+    <div class="nx-container nx-contact-hero__grid">
+      <div class="nx-reveal">
+        <div class="nx-breadcrumb"><a href="index.html" data-k="nav0">Главная</a><span>/</span><span data-k="nav3">Контакты</span></div>
+        <div class="nx-eyebrow" data-k="headEyebrow">Контакты</div>
+        <h1 class="nx-display" data-k="headTitle">Обсудим объект и следующий инженерный шаг</h1>
+        <p class="nx-lead nx-contact-hero__lead" data-k="headSub">Свяжитесь удобным способом или оставьте заявку. Мы уточним задачу, тип объекта, ограничения и предложим понятный порядок дальнейших действий.</p>
+        <div class="nx-hero__actions">
+          <a class="nx-cta nx-btn nx-btn--primary" href="#request" data-k="heroCtaPrimary">Заполнить заявку</a>
+          <a class="nx-ghost nx-btn nx-btn--secondary" href="tel:+79169955777" data-k="heroCtaSecondary">Позвонить</a>
+        </div>
+      </div>
+      <div class="nx-contact-direct nx-reveal" aria-label="Каналы связи">
+        <a class="nx-contact-card" href="tel:+79169955777"><span data-k="con0l">Телефон</span><strong data-k="con0v">+7 (916) 995-57-77</strong><small data-k="con0h">для срочного обсуждения объекта</small></a>
+        <a class="nx-contact-card" href="mailto:hello@neksora.pro"><span data-k="con1l">Почта</span><strong data-k="con1v">hello@neksora.pro</strong><small data-k="con1h">для ТЗ, планов и документации</small></a>
+        <div class="nx-contact-card"><span data-k="con2l">Офис</span><strong data-k="con2v">Москва, по записи</strong><small data-k="con2h">встречи согласуем заранее</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container nx-contact-help">
+      <div class="nx-section-head nx-section-head--compact">
+        <div><div class="nx-eyebrow" data-k="helpEyebrow">С чем обращаться</div><h2 class="nx-h2" data-k="helpTitle">Быстро поймём задачу, если вы опишете объект и цель</h2></div>
+        <p class="nx-lead" data-k="helpSub">Подскажем, какие системы нужны, какие есть риски, как подойти к проектированию и с чего безопасно начать.</p>
+      </div>
+      <div class="nx-contact-help__grid">
+        <article class="nx-company-card nx-reveal"><span>01</span><h3 data-k="help0t">Новый объект</h3><p data-k="help0d">Дом, офис, производство или объект госсектора, где нужно заложить автоматику и безопасность на этапе проекта.</p></article>
+        <article class="nx-company-card nx-reveal"><span>02</span><h3 data-k="help1t">Модернизация</h3><p data-k="help1d">Нужно связать существующие системы, обновить оборудование, добавить диспетчеризацию или повысить надёжность.</p></article>
+        <article class="nx-company-card nx-reveal"><span>03</span><h3 data-k="help2t">Аудит и порядок</h3><p data-k="help2d">Есть разрозненные решения, нет документации или нужна понятная архитектура дальнейшего развития.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" class="nx-section nx-dark-band">
+    <div class="nx-container nx-contact-request">
+      <div class="nx-reveal">
+        <div class="nx-eyebrow" data-k="prepEyebrow">Перед обращением</div>
+        <h2 class="nx-h2" data-k="prepTitle">Что лучше подготовить</h2>
+        <p class="nx-lead" data-k="prepSub">Если данных пока нет — это нормально. Но эти пункты помогут быстрее оценить объём работ и следующий инженерный шаг.</p>
+        <div class="nx-contact-checklist">
+          <div><span>01</span><p data-k="prep0">Тип объекта и примерная площадь</p></div>
+          <div><span>02</span><p data-k="prep1">Какие системы нужны: автоматика, видео, СКУД, ОПС, BMS</p></div>
+          <div><span>03</span><p data-k="prep2">Стадия объекта: проект, ремонт, эксплуатация или модернизация</p></div>
+          <div><span>04</span><p data-k="prep3">Сроки, ограничения, требования к документации и обслуживанию</p></div>
+        </div>
+      </div>
+      <div class="nx-form-card nx-reveal">
+        <div id="form-panel">
+          <div class="nx-form-grid">
+            <label class="nx-field"><span data-k="fName">Имя</span><input id="f-name" class="nx-in" data-kp="fNamePh" placeholder="Как к вам обращаться"></label>
+            <label class="nx-field"><span data-k="fPhone">Телефон</span><input id="f-phone" class="nx-in" placeholder="+7 (___) ___-__-__"><em id="phone-err" data-k="fPhoneErr">Укажите контактный телефон</em></label>
+            <label class="nx-field nx-field--full"><span data-k="fEmail">Почта</span><input id="f-email" class="nx-in" type="email" placeholder="hello@example.com"></label>
+            <div class="nx-field nx-field--full"><span data-k="fType">Тип объекта</span><div class="nx-type-pills" id="obj-types"><button class="nx-seg obj-type-btn active-type" data-idx="0" type="button" data-k="ot0">Дом / квартира</button><button class="nx-seg obj-type-btn" data-idx="1" type="button" data-k="ot1">Бизнес</button><button class="nx-seg obj-type-btn" data-idx="2" type="button" data-k="ot2">Промышленность</button><button class="nx-seg obj-type-btn" data-idx="3" type="button" data-k="ot3">Госсектор</button></div></div>
+            <div class="nx-field nx-field--full"><span data-k="fTask">Задача</span><div class="nx-type-pills" id="task-types"><button class="nx-seg task-type-btn active-type" type="button" data-k="task0">Проект</button><button class="nx-seg task-type-btn" type="button" data-k="task1">Монтаж</button><button class="nx-seg task-type-btn" type="button" data-k="task2">Модернизация</button><button class="nx-seg task-type-btn" type="button" data-k="task3">Сервис</button></div></div>
+            <label class="nx-field nx-field--full"><span data-k="fMsg">Комментарий</span><textarea id="f-msg" class="nx-in" data-kp="fMsgPh" placeholder="Кратко об объекте, системах и сроках" rows="4"></textarea></label>
+            <button id="form-submit" class="nx-cta nx-btn nx-btn--primary nx-field--full" type="button" data-k="fSubmit">Отправить заявку</button>
+            <p class="nx-form-note nx-field--full" data-k="fPrivacy">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+          </div>
+        </div>
+        <div id="form-success" class="nx-success">
+          <div class="nx-success__icon"><svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M5 12.5l4 4 10-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 data-k="okTitle">Заявка отправлена</h3>
+          <p data-k="okText">Спасибо! Свяжемся с вами в течение рабочего дня и обсудим детали проекта.</p>
+          <button id="form-reset" class="nx-ghost nx-btn nx-btn--secondary" type="button" data-k="okReset">Отправить ещё одну</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container">
+      <div class="nx-section-head nx-section-head--compact">
+        <div><div class="nx-eyebrow" data-k="nextEyebrow">После заявки</div><h2 class="nx-h2" data-k="nextTitle">Что произойдёт дальше</h2></div>
+        <p class="nx-lead" data-k="nextSub">Мы не начинаем с продажи оборудования. Сначала уточняем вводные, риски и желаемый результат.</p>
+      </div>
+      <div class="nx-contact-next">
+        <div class="nx-step nx-reveal"><span>01</span><strong data-k="next0t">Свяжемся</strong><p data-k="next0d">Уточним тип объекта, задачи, сроки и удобный формат общения.</p></div>
+        <div class="nx-step nx-reveal"><span>02</span><strong data-k="next1t">Разберём вводные</strong><p data-k="next1d">Оценим состав систем, ограничения, документацию и возможные риски.</p></div>
+        <div class="nx-step nx-reveal"><span>03</span><strong data-k="next2t">Предложим шаг</strong><p data-k="next2d">Подскажем архитектуру, этапность и что нужно подготовить для проекта.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container nx-contact-requisites nx-reveal">
+      <div><span data-k="req0l">Компания</span><strong data-k="req0v">ООО «КСП-Автоматика»</strong></div>
+      <div><span data-k="req1l">ИНН</span><strong data-k="req1v">9718264327</strong></div>
+      <div><span data-k="req2l">Офис</span><strong data-k="req2v">Москва, по записи</strong></div>
+      <div><span data-k="req3l">Сайт</span><strong data-k="req3v">neksora.pro</strong></div>
+    </div>
+  </section>
+</main>
+
+<footer class="nx-footer">
+  <div class="nx-container">
+    <div class="nx-footer__grid">
+      <div><a class="nx-logo" href="index.html"><span class="nx-logo__mark"><svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#06101f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nx-logo__text">НЭКСОРА</span></a><p data-k="footTagline">Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.</p><a href="https://neksora.pro">neksora.pro</a></div>
+      <div><strong data-k="fc0title">Направления</strong><a href="uslugi.html" data-k="fc0a">Умный дом</a><a href="uslugi.html" data-k="fc0b">Автоматизация бизнеса</a><a href="uslugi.html" data-k="fc0c">Промышленная автоматизация</a><a href="uslugi.html" data-k="fc0d">Безопасность</a></div>
+      <div><strong data-k="fc1title">Компания</strong><a href="kompaniya.html" data-k="fc1a">О нас</a><a href="kompaniya.html" data-k="fc1b">Подход</a><a href="uslugi.html" data-k="fc1c">Услуги</a><a href="kontakty.html" data-k="fc1d">Контакты</a></div>
+      <div><strong data-k="fc2title">Заказчикам</strong><a href="kontakty.html" data-k="fc2a">Частным лицам</a><a href="kontakty.html" data-k="fc2b">Бизнесу</a><a href="kontakty.html" data-k="fc2c">Госсектору</a><a href="kontakty.html" data-k="fc2d">Сервис</a></div>
+    </div>
+    <div class="nx-footer__bottom"><span data-k="footCopy">© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.</span><span data-k="footLegal">Политика конфиденциальности · neksora.pro</span></div>
+  </div>
+</footer>
+
+</div>
+<script src="neksora.js"></script>
+<script>
+window.NX_COPY = {
+  ru: {
+    pageTitle:'Контакты — НЭКСОРА',nav0:'Главная',nav1:'Услуги',nav2:'О компании',nav3:'Контакты',cta1:'Заказать консультацию',heroCtaPrimary:'Заполнить заявку',heroCtaSecondary:'Позвонить',
+    headEyebrow:'Контакты',headTitle:'Обсудим объект и следующий инженерный шаг',headSub:'Свяжитесь удобным способом или оставьте заявку. Мы уточним задачу, тип объекта, ограничения и предложим понятный порядок дальнейших действий.',
+    con0l:'Телефон',con0v:'+7 (916) 995-57-77',con0h:'для срочного обсуждения объекта',con1l:'Почта',con1v:'hello@neksora.pro',con1h:'для ТЗ, планов и документации',con2l:'Офис',con2v:'Москва, по записи',con2h:'встречи согласуем заранее',
+    helpEyebrow:'С чем обращаться',helpTitle:'Быстро поймём задачу, если вы опишете объект и цель',helpSub:'Подскажем, какие системы нужны, какие есть риски, как подойти к проектированию и с чего безопасно начать.',help0t:'Новый объект',help0d:'Дом, офис, производство или объект госсектора, где нужно заложить автоматику и безопасность на этапе проекта.',help1t:'Модернизация',help1d:'Нужно связать существующие системы, обновить оборудование, добавить диспетчеризацию или повысить надёжность.',help2t:'Аудит и порядок',help2d:'Есть разрозненные решения, нет документации или нужна понятная архитектура дальнейшего развития.',
+    prepEyebrow:'Перед обращением',prepTitle:'Что лучше подготовить',prepSub:'Если данных пока нет — это нормально. Но эти пункты помогут быстрее оценить объём работ и следующий инженерный шаг.',prep0:'Тип объекта и примерная площадь',prep1:'Какие системы нужны: автоматика, видео, СКУД, ОПС, BMS',prep2:'Стадия объекта: проект, ремонт, эксплуатация или модернизация',prep3:'Сроки, ограничения, требования к документации и обслуживанию',
+    fName:'Имя',fNamePh:'Как к вам обращаться',fPhone:'Телефон',fPhoneErr:'Укажите контактный телефон',fEmail:'Почта',fType:'Тип объекта',ot0:'Дом / квартира',ot1:'Бизнес',ot2:'Промышленность',ot3:'Госсектор',fTask:'Задача',task0:'Проект',task1:'Монтаж',task2:'Модернизация',task3:'Сервис',fMsg:'Комментарий',fMsgPh:'Кратко об объекте, системах и сроках',fSubmit:'Отправить заявку',fPrivacy:'Нажимая кнопку, вы соглашаетесь на обработку персональных данных.',okTitle:'Заявка отправлена',okText:'Спасибо! Свяжемся с вами в течение рабочего дня и обсудим детали проекта.',okReset:'Отправить ещё одну',
+    nextEyebrow:'После заявки',nextTitle:'Что произойдёт дальше',nextSub:'Мы не начинаем с продажи оборудования. Сначала уточняем вводные, риски и желаемый результат.',next0t:'Свяжемся',next0d:'Уточним тип объекта, задачи, сроки и удобный формат общения.',next1t:'Разберём вводные',next1d:'Оценим состав систем, ограничения, документацию и возможные риски.',next2t:'Предложим шаг',next2d:'Подскажем архитектуру, этапность и что нужно подготовить для проекта.',
+    req0l:'Компания',req0v:'ООО «КСП-Автоматика»',req1l:'ИНН',req1v:'9718264327',req2l:'Офис',req2v:'Москва, по записи',req3l:'Сайт',req3v:'neksora.pro',
+    footTagline:'Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.',fc0title:'Направления',fc0a:'Умный дом',fc0b:'Автоматизация бизнеса',fc0c:'Промышленная автоматизация',fc0d:'Безопасность',fc1title:'Компания',fc1a:'О нас',fc1b:'Подход',fc1c:'Услуги',fc1d:'Контакты',fc2title:'Заказчикам',fc2a:'Частным лицам',fc2b:'Бизнесу',fc2c:'Госсектору',fc2d:'Сервис',footCopy:'© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.',footLegal:'Политика конфиденциальности · neksora.pro'
+  },
+  en: {
+    pageTitle:'Contact — NEKSORA',nav0:'Home',nav1:'Services',nav2:'About',nav3:'Contact',cta1:'Request a consultation',heroCtaPrimary:'Submit a request',heroCtaSecondary:'Call us',
+    headEyebrow:'Contact',headTitle:'Discuss your facility and the next engineering step',headSub:'Contact us in a convenient way or submit a request. We will clarify the task, facility type, constraints and suggest a clear next step.',
+    con0l:'Phone',con0v:'+7 (916) 995-57-77',con0h:'for urgent facility discussion',con1l:'Email',con1v:'hello@neksora.pro',con1h:'for briefs, plans and documents',con2l:'Office',con2v:'Moscow, by appointment',con2h:'meetings are arranged in advance',
+    helpEyebrow:'Topics',helpTitle:'We understand the task faster if you describe the facility and goal',helpSub:'We will suggest required systems, risks, design approach and a safe starting point.',help0t:'New facility',help0d:'Home, office, production or public-sector facility where automation and security should be planned at the design stage.',help1t:'Modernization',help1d:'Existing systems need to be connected, upgraded, dispatched or made more reliable.',help2t:'Audit and order',help2d:'There are scattered solutions, missing documentation or a need for a clear development architecture.',
+    prepEyebrow:'Before contact',prepTitle:'What is useful to prepare',prepSub:'If you do not have the data yet, that is fine. These points help us estimate scope and the next engineering step faster.',prep0:'Facility type and approximate area',prep1:'Required systems: automation, video, access control, fire alarm, BMS',prep2:'Facility stage: design, renovation, operation or modernization',prep3:'Timeline, constraints, documentation and service requirements',
+    fName:'Name',fNamePh:'How should we address you',fPhone:'Phone',fPhoneErr:'Please provide a contact phone',fEmail:'Email',fType:'Facility type',ot0:'Home',ot1:'Business',ot2:'Industry',ot3:'Public sector',fTask:'Task',task0:'Design',task1:'Install',task2:'Upgrade',task3:'Service',fMsg:'Comment',fMsgPh:'Briefly about the facility, systems and timeline',fSubmit:'Send request',fPrivacy:'By submitting, you agree to the processing of personal data.',okTitle:'Request sent',okText:'Thank you! We will contact you within one business day to discuss the project.',okReset:'Send another',
+    nextEyebrow:'After request',nextTitle:'What happens next',nextSub:'We do not start by selling equipment. First we clarify inputs, risks and the desired result.',next0t:'We contact you',next0d:'We clarify facility type, goals, timeline and preferred communication format.',next1t:'We review inputs',next1d:'We assess system scope, constraints, documentation and possible risks.',next2t:'We suggest a step',next2d:'We suggest architecture, stages and what should be prepared for the project.',
+    req0l:'Company',req0v:'KSP-Avtomatika LLC',req1l:'Tax ID',req1v:'9718264327',req2l:'Office',req2v:'Moscow, by appointment',req3l:'Website',req3v:'neksora.pro',
+    footTagline:'Design and delivery of automation and security systems for home, business and industry.',fc0title:'Directions',fc0a:'Smart home',fc0b:'Business automation',fc0c:'Industrial automation',fc0d:'Security',fc1title:'Company',fc1a:'About',fc1b:'Approach',fc1c:'Services',fc1d:'Contact',fc2title:'Clients',fc2a:'Private',fc2b:'Business',fc2c:'Public sector',fc2d:'Service',footCopy:'© 2026 KSP-Avtomatika LLC · NEKSORA. All rights reserved.',footLegal:'Privacy policy · neksora.pro'
+  }
+};
+
+(function(){
+  function activateGroup(selector){
+    var buttons=[].slice.call(document.querySelectorAll(selector));
+    buttons.forEach(function(btn){
+      btn.addEventListener('click',function(){
+        buttons.forEach(function(b){b.classList.remove('active-type');});
+        btn.classList.add('active-type');
+      });
+    });
+  }
+  function initContactForm(){
+    var phone=document.getElementById('f-phone');
+    var err=document.getElementById('phone-err');
+    var submit=document.getElementById('form-submit');
+    var panel=document.getElementById('form-panel');
+    var success=document.getElementById('form-success');
+    var reset=document.getElementById('form-reset');
+    if(!phone||!err||!submit||!panel||!success||!reset)return;
+    phone.addEventListener('input',function(){if(phone.value.trim()){phone.classList.remove('is-error');err.style.display='none';}});
+    submit.addEventListener('click',function(){
+      if(!phone.value.trim()){phone.classList.add('is-error');err.style.display='block';phone.focus();return;}
+      panel.style.display='none';success.style.display='block';
+    });
+    reset.addEventListener('click',function(){
+      ['f-name','f-phone','f-email','f-msg'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});
+      phone.classList.remove('is-error');err.style.display='none';success.style.display='none';panel.style.display='block';
+    });
+  }
+  document.addEventListener('DOMContentLoaded',function(){activateGroup('.obj-type-btn');activateGroup('.task-type-btn');initContactForm();});
+})();
+</script>
+</body>
+</html>

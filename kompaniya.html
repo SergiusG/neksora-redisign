@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="НЭКСОРА — инженерная компания по автоматизации и системам безопасности: проектирование, внедрение, документация и сопровождение объектов.">
+<title>О компании — НЭКСОРА</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="neksora.css">
+</head>
+<body>
+<div class="nx-root nx-company-page">
+
+<header class="nx-header">
+  <div class="nx-container nx-header__inner">
+    <a href="index.html" class="nx-logo" aria-label="НЭКСОРА">
+      <span class="nx-logo__mark"><svg width="22" height="22" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#06101f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="nx-logo__text">НЭКСОРА</span>
+    </a>
+    <nav class="nx-nav" aria-label="Главная навигация">
+      <a class="nx-link" href="index.html" data-k="nav0">Главная</a>
+      <a class="nx-link" href="uslugi.html" data-k="nav1">Услуги</a>
+      <a class="nx-link" href="kompaniya.html" data-k="nav2" aria-current="page">О компании</a>
+      <a class="nx-link" href="kontakty.html" data-k="nav3">Контакты</a>
+    </nav>
+    <div class="nx-headactions">
+      <div class="nx-lang" aria-label="Переключение языка">
+        <button class="nx-seg" data-lang="ru" type="button">RU</button>
+        <button class="nx-seg" data-lang="en" type="button">EN</button>
+      </div>
+      <a class="nx-cta nx-btn nx-btn--primary" href="kontakty.html" data-k="cta1">Заказать консультацию</a>
+    </div>
+    <button id="nx-burger" class="nx-burger" aria-label="Menu" aria-expanded="false" type="button">
+      <svg id="nx-burger-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <svg id="nx-burger-close" width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div id="nx-mobile-menu" class="nx-mobile-menu">
+    <div class="nx-container nx-mobile-menu__inner">
+      <a data-close-menu href="index.html" data-k="nav0">Главная</a>
+      <a data-close-menu href="uslugi.html" data-k="nav1">Услуги</a>
+      <a data-close-menu href="kompaniya.html" data-k="nav2">О компании</a>
+      <a data-close-menu href="kontakty.html" data-k="nav3">Контакты</a>
+      <div class="nx-mobile-menu__actions">
+        <div class="nx-lang"><button class="nx-seg" data-lang="ru" type="button">RU</button><button class="nx-seg" data-lang="en" type="button">EN</button></div>
+        <a class="nx-cta nx-btn nx-btn--primary" data-close-menu href="kontakty.html" data-k="cta1">Заказать консультацию</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="nx-company-hero nx-section">
+    <div class="nx-bg-grid" aria-hidden="true"></div>
+    <div class="nx-container nx-company-hero__grid">
+      <div class="nx-reveal">
+        <div class="nx-breadcrumb"><a href="index.html" data-k="nav0">Главная</a><span>/</span><span data-k="nav2">О компании</span></div>
+        <div class="nx-eyebrow" data-k="headEyebrow">О компании</div>
+        <h1 class="nx-display" data-k="headTitle">Инженерный партнёр для ответственных объектов</h1>
+        <p class="nx-lead nx-company-hero__lead" data-k="headSub">НЭКСОРА проектирует, внедряет и сопровождает системы автоматизации и безопасности для домов, бизнеса, промышленности и объектов с повышенными требованиями к надёжности.</p>
+        <div class="nx-hero__actions">
+          <a class="nx-cta nx-btn nx-btn--primary" href="kontakty.html" data-k="heroCtaPrimary">Обсудить объект</a>
+          <a class="nx-ghost nx-btn nx-btn--secondary" href="#principles" data-k="heroCtaSecondary">Наш подход</a>
+        </div>
+      </div>
+      <div class="nx-company-brief nx-reveal" aria-label="Кратко о подходе НЭКСОРА">
+        <div class="nx-company-brief__line"><span data-k="brief0l">Фокус</span><strong data-k="brief0v">Автоматизация · безопасность · сервис</strong></div>
+        <div class="nx-company-brief__line"><span data-k="brief1l">Модель</span><strong data-k="brief1v">Проектирование → внедрение → сопровождение</strong></div>
+        <div class="nx-company-brief__line"><span data-k="brief2l">Подход</span><strong data-k="brief2v">Документация, нормы, масштабируемость</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container nx-company-stats">
+      <div class="nx-proof nx-reveal"><strong data-k="stat0v">1</strong><span data-k="stat0l">подрядчик на полный цикл работ</span></div>
+      <div class="nx-proof nx-reveal"><strong data-k="stat1v">24/7</strong><span data-k="stat1l">готовность к мониторингу и сервису</span></div>
+      <div class="nx-proof nx-reveal"><strong data-k="stat2v">ГОСТ</strong><span data-k="stat2l">документация и соблюдение требований</span></div>
+      <div class="nx-proof nx-reveal"><strong data-k="stat3v">BMS</strong><span data-k="stat3l">единая логика инженерных систем</span></div>
+    </div>
+  </section>
+
+  <section id="principles" class="nx-section nx-dark-band">
+    <div class="nx-container">
+      <div class="nx-section-head">
+        <div><div class="nx-eyebrow" data-k="princEyebrow">Принципы</div><h2 class="nx-h2" data-k="princTitle">Почему нам можно доверить сложный объект</h2></div>
+        <p class="nx-lead" data-k="princSub">Мы не продаём набор устройств. Мы собираем управляемую инженерную систему, которую можно принять, обслуживать, развивать и объяснить ответственным лицам.</p>
+      </div>
+      <div class="nx-company-principles">
+        <article class="nx-company-card nx-reveal"><span>01</span><h3 data-k="pr0title">Инженерная проверка</h3><p data-k="pr0desc">Начинаем с обследования, требований, сценариев эксплуатации и рисков, а не с каталога оборудования.</p></article>
+        <article class="nx-company-card nx-reveal"><span>02</span><h3 data-k="pr1title">Единая ответственность</h3><p data-k="pr1desc">Проект, монтаж, пусконаладка и сервис не распадаются между разными исполнителями.</p></article>
+        <article class="nx-company-card nx-reveal"><span>03</span><h3 data-k="pr2title">Документация и нормы</h3><p data-k="pr2desc">Фиксируем схемы, спецификации, регламенты и исполнительные материалы для эксплуатации.</p></article>
+        <article class="nx-company-card nx-reveal"><span>04</span><h3 data-k="pr3title">Сервисная пригодность</h3><p data-k="pr3desc">Проектируем так, чтобы систему можно было диагностировать, модернизировать и масштабировать.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container nx-company-value">
+      <div class="nx-reveal"><div class="nx-eyebrow" data-k="valueEyebrow">Инженерная ценность</div><h2 class="nx-h2" data-k="valueTitle">Соединяем несколько систем в одну управляемую инфраструктуру</h2></div>
+      <div class="nx-company-value__list">
+        <div class="nx-evidence-card nx-reveal"><span>01</span><h3 data-k="value0t">Автоматизация</h3><p data-k="value0d">Свет, климат, сценарии, диспетчеризация и управление ресурсами.</p></div>
+        <div class="nx-evidence-card nx-reveal"><span>02</span><h3 data-k="value1t">Безопасность</h3><p data-k="value1d">Видео, СКУД, охранные и пожарные системы в единой логике реагирования.</p></div>
+        <div class="nx-evidence-card nx-reveal"><span>03</span><h3 data-k="value2t">Эксплуатация</h3><p data-k="value2d">Мониторинг, регламенты, документация и понятная поддержка после запуска.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container">
+      <div class="nx-section-head nx-section-head--compact">
+        <div><div class="nx-eyebrow" data-k="audEyebrow">Опыт объектов</div><h2 class="nx-h2" data-k="audTitle">Подходим к объекту с учётом заказчика и требований</h2></div>
+        <p class="nx-lead" data-k="audSub">Частный дом, офис, производство или государственный объект требуют разной глубины проектирования, документации и сопровождения.</p>
+      </div>
+      <div class="nx-audience-grid nx-company-audience">
+        <article class="nx-audience-card nx-reveal"><span>01</span><h3 data-k="aud0title">Частные заказчики</h3><p data-k="aud0desc">Премиальные дома и резиденции: комфортные сценарии, безопасность и сервис без лишней сложности для пользователя.</p></article>
+        <article class="nx-audience-card nx-reveal"><span>02</span><h3 data-k="aud1title">Коммерческие объекты</h3><p data-k="aud1desc">Офисы, ритейл, отели и склады: управляемость, снижение эксплуатационных затрат и контроль рисков.</p></article>
+        <article class="nx-audience-card nx-reveal"><span>03</span><h3 data-k="aud2title">Промышленность и госсектор</h3><p data-k="aud2desc">Объекты с требованиями к нормам, документации, отказоустойчивости и прозрачности исполнения.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-dark-band">
+    <div class="nx-container nx-process-layout">
+      <div class="nx-process-copy nx-reveal"><div class="nx-eyebrow" data-k="workEyebrow">Как работаем</div><h2 class="nx-h2" data-k="workTitle">Прозрачный процесс вместо хаотичных решений</h2><p class="nx-lead" data-k="workSub">Каждый этап оставляет понятный результат: требования, архитектуру, внедрённую систему, документацию и регламент обслуживания.</p></div>
+      <div class="nx-process-steps">
+        <div class="nx-step nx-reveal"><span>01</span><strong data-k="work0t">Аудит</strong><p data-k="work0d">Фиксируем задачи, ограничения, риски и требования объекта.</p></div>
+        <div class="nx-step nx-reveal"><span>02</span><strong data-k="work1t">Проект</strong><p data-k="work1d">Готовим архитектуру, спецификации, схемы и этапность внедрения.</p></div>
+        <div class="nx-step nx-reveal"><span>03</span><strong data-k="work2t">Реализация</strong><p data-k="work2d">Монтируем, программируем, тестируем и объединяем подсистемы.</p></div>
+        <div class="nx-step nx-reveal"><span>04</span><strong data-k="work3t">Сопровождение</strong><p data-k="work3d">Передаём документацию, обучаем и поддерживаем объект после запуска.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nx-section nx-section--tight">
+    <div class="nx-container nx-cta-panel nx-reveal">
+      <div><div class="nx-eyebrow" data-k="ctaEyebrow">Следующий шаг</div><h2 data-k="ctaTitle">Расскажите о вашем объекте — предложим инженерный подход</h2><p data-k="ctaSub">Обсудим задачи, ограничения, требования к документации и безопасную архитектуру внедрения.</p></div>
+      <a class="nx-cta nx-btn nx-btn--primary" href="kontakty.html" data-k="cta1">Заказать консультацию</a>
+    </div>
+  </section>
+</main>
+
+<footer class="nx-footer">
+  <div class="nx-container">
+    <div class="nx-footer__grid">
+      <div><a class="nx-logo" href="index.html"><span class="nx-logo__mark"><svg width="20" height="20" viewBox="0 0 48 48" fill="none"><path d="M13 35 L35 13 M22 13 L35 13 L35 26" stroke="#06101f" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="nx-logo__text">НЭКСОРА</span></a><p data-k="footTagline">Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.</p><a href="https://neksora.pro">neksora.pro</a></div>
+      <div><strong data-k="fc0title">Направления</strong><a href="uslugi.html" data-k="fc0a">Умный дом</a><a href="uslugi.html" data-k="fc0b">Автоматизация бизнеса</a><a href="uslugi.html" data-k="fc0c">Промышленная автоматизация</a><a href="uslugi.html" data-k="fc0d">Безопасность</a></div>
+      <div><strong data-k="fc1title">Компания</strong><a href="kompaniya.html" data-k="fc1a">О нас</a><a href="kompaniya.html" data-k="fc1b">Подход</a><a href="uslugi.html" data-k="fc1c">Услуги</a><a href="kontakty.html" data-k="fc1d">Контакты</a></div>
+      <div><strong data-k="fc2title">Заказчикам</strong><a href="kontakty.html" data-k="fc2a">Частным лицам</a><a href="kontakty.html" data-k="fc2b">Бизнесу</a><a href="kontakty.html" data-k="fc2c">Госсектору</a><a href="kontakty.html" data-k="fc2d">Сервис</a></div>
+    </div>
+    <div class="nx-footer__bottom"><span data-k="footCopy">© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.</span><span data-k="footLegal">Политика конфиденциальности · neksora.pro</span></div>
+  </div>
+</footer>
+
+</div>
+<script src="neksora.js"></script>
+<script>
+window.NX_COPY = {
+  ru: {
+    pageTitle:'О компании — НЭКСОРА',
+    nav0:'Главная',nav1:'Услуги',nav2:'О компании',nav3:'Контакты',cta1:'Заказать консультацию',heroCtaPrimary:'Обсудить объект',heroCtaSecondary:'Наш подход',
+    headEyebrow:'О компании',headTitle:'Инженерный партнёр для ответственных объектов',headSub:'НЭКСОРА проектирует, внедряет и сопровождает системы автоматизации и безопасности для домов, бизнеса, промышленности и объектов с повышенными требованиями к надёжности.',
+    brief0l:'Фокус',brief0v:'Автоматизация · безопасность · сервис',brief1l:'Модель',brief1v:'Проектирование → внедрение → сопровождение',brief2l:'Подход',brief2v:'Документация, нормы, масштабируемость',
+    stat0v:'1',stat0l:'подрядчик на полный цикл работ',stat1v:'24/7',stat1l:'готовность к мониторингу и сервису',stat2v:'ГОСТ',stat2l:'документация и соблюдение требований',stat3v:'BMS',stat3l:'единая логика инженерных систем',
+    princEyebrow:'Принципы',princTitle:'Почему нам можно доверить сложный объект',princSub:'Мы не продаём набор устройств. Мы собираем управляемую инженерную систему, которую можно принять, обслуживать, развивать и объяснить ответственным лицам.',pr0title:'Инженерная проверка',pr0desc:'Начинаем с обследования, требований, сценариев эксплуатации и рисков, а не с каталога оборудования.',pr1title:'Единая ответственность',pr1desc:'Проект, монтаж, пусконаладка и сервис не распадаются между разными исполнителями.',pr2title:'Документация и нормы',pr2desc:'Фиксируем схемы, спецификации, регламенты и исполнительные материалы для эксплуатации.',pr3title:'Сервисная пригодность',pr3desc:'Проектируем так, чтобы систему можно было диагностировать, модернизировать и масштабировать.',
+    valueEyebrow:'Инженерная ценность',valueTitle:'Соединяем несколько систем в одну управляемую инфраструктуру',value0t:'Автоматизация',value0d:'Свет, климат, сценарии, диспетчеризация и управление ресурсами.',value1t:'Безопасность',value1d:'Видео, СКУД, охранные и пожарные системы в единой логике реагирования.',value2t:'Эксплуатация',value2d:'Мониторинг, регламенты, документация и понятная поддержка после запуска.',
+    audEyebrow:'Опыт объектов',audTitle:'Подходим к объекту с учётом заказчика и требований',audSub:'Частный дом, офис, производство или государственный объект требуют разной глубины проектирования, документации и сопровождения.',aud0title:'Частные заказчики',aud0desc:'Премиальные дома и резиденции: комфортные сценарии, безопасность и сервис без лишней сложности для пользователя.',aud1title:'Коммерческие объекты',aud1desc:'Офисы, ритейл, отели и склады: управляемость, снижение эксплуатационных затрат и контроль рисков.',aud2title:'Промышленность и госсектор',aud2desc:'Объекты с требованиями к нормам, документации, отказоустойчивости и прозрачности исполнения.',
+    workEyebrow:'Как работаем',workTitle:'Прозрачный процесс вместо хаотичных решений',workSub:'Каждый этап оставляет понятный результат: требования, архитектуру, внедрённую систему, документацию и регламент обслуживания.',work0t:'Аудит',work0d:'Фиксируем задачи, ограничения, риски и требования объекта.',work1t:'Проект',work1d:'Готовим архитектуру, спецификации, схемы и этапность внедрения.',work2t:'Реализация',work2d:'Монтируем, программируем, тестируем и объединяем подсистемы.',work3t:'Сопровождение',work3d:'Передаём документацию, обучаем и поддерживаем объект после запуска.',
+    ctaEyebrow:'Следующий шаг',ctaTitle:'Расскажите о вашем объекте — предложим инженерный подход',ctaSub:'Обсудим задачи, ограничения, требования к документации и безопасную архитектуру внедрения.',
+    footTagline:'Проектирование и реализация систем автоматизации и безопасности для дома, бизнеса и промышленности.',fc0title:'Направления',fc0a:'Умный дом',fc0b:'Автоматизация бизнеса',fc0c:'Промышленная автоматизация',fc0d:'Безопасность',fc1title:'Компания',fc1a:'О нас',fc1b:'Подход',fc1c:'Услуги',fc1d:'Контакты',fc2title:'Заказчикам',fc2a:'Частным лицам',fc2b:'Бизнесу',fc2c:'Госсектору',fc2d:'Сервис',footCopy:'© 2026 ООО «КСП-Автоматика» · НЭКСОРА. Все права защищены.',footLegal:'Политика конфиденциальности · neksora.pro'
+  },
+  en: {
+    pageTitle:'About — NEKSORA',
+    nav0:'Home',nav1:'Services',nav2:'About',nav3:'Contact',cta1:'Request a consultation',heroCtaPrimary:'Discuss a facility',heroCtaSecondary:'Our approach',
+    headEyebrow:'About',headTitle:'Engineering partner for responsible facilities',headSub:'NEKSORA designs, deploys and supports automation and security systems for homes, business, industry and facilities with high reliability requirements.',
+    brief0l:'Focus',brief0v:'Automation · security · service',brief1l:'Model',brief1v:'Design → deployment → support',brief2l:'Approach',brief2v:'Documentation, standards, scalability',
+    stat0v:'1',stat0l:'contractor for the full work cycle',stat1v:'24/7',stat1l:'monitoring and service readiness',stat2v:'GOST',stat2l:'documentation and compliance',stat3v:'BMS',stat3l:'unified logic for engineering systems',
+    princEyebrow:'Principles',princTitle:'Why complex facilities can trust us',princSub:'We do not sell a set of devices. We assemble a manageable engineering system that can be accepted, serviced, developed and explained to responsible stakeholders.',pr0title:'Engineering validation',pr0desc:'We start with survey, requirements, operating scenarios and risks — not with an equipment catalogue.',pr1title:'Single responsibility',pr1desc:'Design, installation, commissioning and service do not split between unrelated contractors.',pr2title:'Documentation and standards',pr2desc:'We record diagrams, specifications, regulations and as-built materials for operation.',pr3title:'Service-ready systems',pr3desc:'We design so the system can be diagnosed, upgraded and scaled.',
+    valueEyebrow:'Engineering value',valueTitle:'We connect multiple systems into one manageable infrastructure',value0t:'Automation',value0d:'Lighting, climate, scenes, dispatching and resource control.',value1t:'Security',value1d:'Video, access control, intrusion and fire systems in one response logic.',value2t:'Operation',value2d:'Monitoring, regulations, documentation and clear support after launch.',
+    audEyebrow:'Facility experience',audTitle:'We adapt to client type and requirements',audSub:'A private home, office, production site or public-sector facility requires different design depth, documentation and support.',aud0title:'Private clients',aud0desc:'Premium homes and residences: comfort scenes, safety and service without unnecessary user complexity.',aud1title:'Commercial facilities',aud1desc:'Offices, retail, hotels and warehouses: control, lower operating costs and risk management.',aud2title:'Industry and public sector',aud2desc:'Facilities with requirements for standards, documentation, fault tolerance and transparent execution.',
+    workEyebrow:'How we work',workTitle:'A transparent process instead of chaotic decisions',workSub:'Each stage leaves a clear result: requirements, architecture, deployed system, documentation and maintenance regulations.',work0t:'Audit',work0d:'We capture goals, limits, risks and facility requirements.',work1t:'Design',work1d:'We prepare architecture, specifications, diagrams and implementation stages.',work2t:'Deployment',work2d:'We install, program, test and connect subsystems.',work3t:'Support',work3d:'We hand over documentation, train teams and support the facility after launch.',
+    ctaEyebrow:'Next step',ctaTitle:'Tell us about your facility — we will suggest an engineering approach',ctaSub:'We will discuss goals, limits, documentation requirements and a safe deployment architecture.',
+    footTagline:'Design and delivery of automation and security systems for home, business and industry.',fc0title:'Directions',fc0a:'Smart home',fc0b:'Business automation',fc0c:'Industrial automation',fc0d:'Security',fc1title:'Company',fc1a:'About',fc1b:'Approach',fc1c:'Services',fc1d:'Contact',fc2title:'Clients',fc2a:'Private',fc2b:'Business',fc2c:'Public sector',fc2d:'Service',footCopy:'© 2026 KSP-Avtomatika LLC · NEKSORA. All rights reserved.',footLegal:'Privacy policy · neksora.pro'
+  }
+};
+</script>
+</body>
+</html>
